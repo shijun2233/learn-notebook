@@ -1,0 +1,62 @@
+\documentclass{article}
+
+% This is the preamble, load any packages you're going to use here
+\usepackage{physics} % provides lots of nice features and commands often used in physics, it also loads some other packages (like AMSmath)
+%\usepackage{siunitx} % typesets numbers with units very nicely
+\usepackage{rerunfilecheck}
+\usepackage{enumerate} % allows us to customize our lists
+\usepackage{amsmath} % provides many useful commands for math
+\usepackage{amssymb} % provides many useful symbols
+\usepackage{graphicx} % allows us to include graphics
+\usepackage{hyperref} % allows us to include hyperlinks
+\usepackage{float} % allows us to control the placement of figures
+\usepackage{listings} % allows us to include code
+\usepackage{color} % allows us to define colors
+\usepackage{tikz} % allows us to draw pictures
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18} % 设置 pgfplots 兼容版本
+\usepackage{listings}
+\usepackage{graphicx}
+\usepackage[a4paper, left=2cm, right=2cm, top=1cm, bottom=2cm]{geometry}% 设置页边距
+\usepackage{ctex}
+%\setCJKmainfont[ItalicFont=Noto Sans CJK SC Bold, BoldFont=Noto Serif CJK SC Black]{Noto Serif CJK SC}
+\lstset{
+    columns=fixed,          
+    numberstyle=\tiny\color{gray},                       % 设定行号格式
+    frame=none,                                          % 不显示背景边框
+    backgroundcolor=\color[RGB]{245,245,244},            % 设定背景颜色
+    keywordstyle=\color[RGB]{40,40,255},                 % 设定关键字颜色
+    numberstyle=\footnotesize\color{darkgray},           
+    commentstyle=\it\color[RGB]{0,96,96},                % 设置代码注释的格式
+    stringstyle=\rmfamily\slshape\color[RGB]{128,0,0},   % 设置字符串格式
+    showstringspaces=false,                              % 不显示字符串中的空格
+    language=python,                                        % 设置语言
+    basicstyle=\ttfamily\footnotesize,                          % 设置代码字体大小
+}
+
+
+\begin{document}
+\title{极化源相关论文学习笔记}
+\author{刘世珺}
+\date{\today}
+\maketitle
+\tableofcontents
+
+
+
+\newpage
+\section{极化H/D源}  
+
+
+\section{极化氢分子源}
+
+
+
+\section{极化$^{3}\text{He}$源}
+
+\newpage
+\addcontentsline{toc}{section}{参考文献}
+\bibliographystyle{plain}
+\bibliography{mylib}
+
+\end{document}
