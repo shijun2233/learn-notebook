@@ -1,4 +1,5 @@
 \contentsline {section}{\numberline {1}极化H/D源}{2}{section.1}%
 \contentsline {section}{\numberline {2}极化氢分子源}{2}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Stimulated Raman adiabatic passage in physics, chemistry, and beyond\cite {vitanov_stimulated_2017}}{2}{subsection.2.1}%
 \contentsline {section}{\numberline {3}极化$^{3}\text {He}$源}{2}{section.3}%
 \contentsline {section}{参考文献}{3}{section.3}%

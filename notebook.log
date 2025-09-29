@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.8.22)  29 SEP 2025 09:27
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.8.22)  29 SEP 2025 09:45
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -840,23 +840,31 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 55.
+(hyperref)                removing `\@ifnextchar' on input line 55.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `superscript' on input line 55.
+(hyperref)                removing `subscript' on input line 55.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 55.
+(hyperref)                removing `subscript' on input line 55.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 58.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `superscript' on input line 58.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 58.
 
 
 
-[2] (./notebook.bbl
-
-LaTeX Warning: Empty `thebibliography' environment on input line 3.
-
-)
+[2] (./notebook.bbl)
 
 [3] (./notebook.aux)
  ***********
@@ -864,15 +872,15 @@ LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2022/07/14>
  ***********
 Package rerunfilecheck Info: File `notebook.out' has not changed.
-(rerunfilecheck)             Checksum: 65EC7436DD3D629C4989E8F2436BA1B1;330.
+(rerunfilecheck)             Checksum: 056DF1F0B5D62CC02A6D8B0B5C5D0E61;856.
  ) 
 Here is how much of TeX's memory you used:
- 37376 strings out of 473832
- 907265 string characters out of 5733158
- 1584627 words of memory out of 5000000
- 59823 multiletter control sequences out of 15000+600000
+ 37379 strings out of 473832
+ 907316 string characters out of 5733158
+ 1585627 words of memory out of 5000000
+ 59826 multiletter control sequences out of 15000+600000
  571661 words of font info for 112 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  93i,6n,111p,773b,479s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on notebook.xdv (3 pages, 5436 bytes).
+Output written on notebook.xdv (3 pages, 10048 bytes).
