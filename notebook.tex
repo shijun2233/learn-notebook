@@ -40,6 +40,7 @@
 \author{刘世珺}
 \date{\today}
 \maketitle
+\hypersetup{hidelinks}
 \tableofcontents
 
 
@@ -53,6 +54,41 @@
 \section{极化氢分子源}
 
 \subsection{Stimulated Raman adiabatic passage in physics,  chemistry, and beyond\cite{vitanov_stimulated_2017}}
+Stimulated Raman adiabatic passage (STIRAP) 是一种利用中间态，将两个辐射场与两个量子态耦合，进一步可以使两个量子态之间相互转化的技术。这种技术有两个特点：
+\begin{enumerate}
+    \item 不受中间态自发辐射的损失
+    \item 在不同实验条件下都比较稳定
+\end{enumerate} 
+下面就不同部分对STIRAP进行介绍。
+\paragraph{基本原理}
+
+在量子力学中，含时薛定谔方程为 
+\begin{equation}
+    i\hbar\frac{\text{d}}{\text{d} t}\Psi(t) = \hat{H}\Psi(t)
+\end{equation}  
+
+\subsection{Spin manipulation and nuclear polarization enhancement in particle beams with static magnetic fields\cite{kannis_spin_2025}}
+
+当非相对论性粒子束在通过一个静态空间变化的磁场时，磁场可以增强氢/氘原子束或者特定转动状态的氢氘分子束中的核极化。这种增强源于超精细结构的跃迁。 通过研究不同初始条件下，非均匀磁场下的相互作用角动量动力学，可以了解这种增强。  该论文主要介绍自选动力学的理论框架，并给出在特定原子和分子中的应用。
+
+\paragraph{基本原理}
+本文考虑的系统包含以下几种角动量组成：核自旋角动量\(\textbf{I}\),电子的总自旋角动量\(\textbf{S}\)，分子的旋转角动量\(\textbf{J}\).假设由两个相互作用的角动量\(\textbf{L}_{\textbf{1,2}}\)组成的系统未耦合的基向量可以写作
+\begin{equation}
+    \ket{L_1l_1,L_2l_2} = \ket{L_1l_1}\otimes\ket{L_2l_2}
+    \label{eq:uncoupled_basis_vector}   
+\end{equation}  
+其中\(L_{1,2}\)分别表示两个角动量的量子数，\(l_{1,2}\)表示它们沿着量子化轴的投影。所以可以将\(\ket{l_1,l_2}\)记作系统未耦合的基向量。
+
+对于耦合基，定义一个额外的角动量算符\( \textbf{K} = \textbf{L}_{\textbf{2}} + \textbf{L}_{\textbf{2}} \),这个可以表示为\( \textbf{K} = \textbf{L}_{\textbf{1}}\otimes \mathbb{I}  + \mathbb{I} \otimes\textbf{L}_{\textbf{2}} \)，类似的。\(\ket{K,k}\)表示总角动量量子数为\(K\)的基向量在量子化轴上的投影为\(k\)。 
+
+
+
+\subsection{Highly Spin-Polarized Atoms and Molecules from Rotationally State-Selected Molecules\cite{rakitzis_highly_2005}}
+
+产生极化原子的方法目前有三种,分别是Stern-Gerlach分离法,光泵浦法(optical pumping)和自旋交换光泵浦法(spin-exchange optical pumping)。本篇论文展示了如何使用光学方法产生100\%的核极化，使用脉冲的激光或者微波可以产生具有量子数$J$和$M$的旋转极化的分子，之后将旋转的极化耦合到非极化的核自旋上，通过超精细作用实现极化的传递。
+
+
+
 
 
 \section{极化$^{3}\text{He}$源}
