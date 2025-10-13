@@ -1,20 +1,20 @@
 # Fdb version 4
-["bibtex notebook"] 1760317417.59916 "notebook.aux" "notebook.bbl" "notebook" 1760317962.30093 0
+["bibtex notebook"] 1760325655.78484 "notebook.aux" "notebook.bbl" "notebook" 1760325660.36772 0
   "./mylib.bib" 1760317354 95890 5be95175443a754622dd6355e3de3868 ""
   "d:/texlive/2025/texmf-dist/bibtex/bst/base/plain.bst" 1755832905 20613 bd3fbfa9f64872b81ac57a0dd2ed855f ""
-  "notebook.aux" 1760317960 1819 aa3633d2269a4fd8c585f8d6dc1d020a "xelatex"
+  "notebook.aux" 1760325658 2706 ec6748f80f05e44e7a55dc8d874d4a9e "xelatex"
   (generated)
   "notebook.bbl"
   "notebook.blg"
   (rewritten before read)
-["xdvipdfmx"] 1760317961.56028 "notebook.xdv" "notebook.pdf" "notebook" 1760317962.30807 0
-  "notebook.xdv" 1760317960 34548 1236769c5ebcbd8df712f03cf1fd12d3 "xelatex"
+["xdvipdfmx"] 1760325659.52095 "notebook.xdv" "notebook.pdf" "notebook" 1760325660.37273 0
+  "notebook.xdv" 1760325658 50244 73800cfd7145a4c091c769a2e5c258c8 "xelatex"
   (generated)
   "notebook.pdf"
   (rewritten before read)
-["xelatex"] 1760317958.51034 "d:/Documents/SPIS/论文学习笔记/notebook.tex" "notebook.xdv" "notebook" 1760317962.30115 0
+["xelatex"] 1760325656.18198 "d:/Documents/SPIS/论文学习笔记/notebook.tex" "notebook.xdv" "notebook" 1760325660.36793 0
   "c:/Windows/Fonts/msyh.ttc" 1752975049 19704352 1e10e74402e59d54499af795caf0b135 ""
-  "d:/Documents/SPIS/论文学习笔记/notebook.tex" 1760317957 5275 ef6259ead1b3cf3f349b3119aca0a398 ""
+  "d:/Documents/SPIS/论文学习笔记/notebook.tex" 1760325657 8599 2105bbf9e1d83b406a05246a2ecd7797 ""
   "d:/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1755833408 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "d:/texlive/2025/texmf-dist/fonts/tfm/adobe/zapfding/pzdr.tfm" 1755834861 1528 7e12f4c0fcf5a072cebdcfbfc610f54c ""
   "d:/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1755832725 1004 54797486969f23fa377b128694d548df ""
@@ -168,6 +168,7 @@
   "d:/texlive/2025/texmf-dist/tex/latex/base/fontenc.sty" 1755833715 5275 0d62fb62162c7ab056e941ef18c5076d ""
   "d:/texlive/2025/texmf-dist/tex/latex/base/size10.clo" 1755833715 8448 5cf247d4bd0c7d5d711bbbdf111fae2e ""
   "d:/texlive/2025/texmf-dist/tex/latex/base/ts1enc.def" 1755833715 8090 bcb38b4f148e75e16d2c33225dbca53b ""
+  "d:/texlive/2025/texmf-dist/tex/latex/chemgreek/chemgreek.sty" 1755832980 47530 64600845afa9c25b782d42fa33f66772 ""
   "d:/texlive/2025/texmf-dist/tex/latex/cjk/texinput/CJKfntef.sty" 1755832998 12851 25a9b5cc006609feb5c9a20ce24a5392 ""
   "d:/texlive/2025/texmf-dist/tex/latex/ctex/config/ctex-name-utf8.cfg" 1755833154 1770 50e40a993c4c5ea72af9155aff7e605c ""
   "d:/texlive/2025/texmf-dist/tex/latex/ctex/config/ctex.cfg" 1755833154 1230 140911b70e325208170dc573931e772d ""
@@ -204,6 +205,7 @@
   "d:/texlive/2025/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty" 1755833701 13815 760b0c02f691ea230f5359c4e1de23a7 ""
   "d:/texlive/2025/texmf-dist/tex/latex/l3backend/l3backend-xetex.def" 1755833703 31593 96a7f07a08af85a2bbfee2e0a9cdbb50 ""
   "d:/texlive/2025/texmf-dist/tex/latex/l3kernel/expl3.sty" 1755833705 6565 f51d809db6193fae7b06c1bc26ca8f75 ""
+  "d:/texlive/2025/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty" 1755833708 4674 22943918cc84173478a588d6efbc800b ""
   "d:/texlive/2025/texmf-dist/tex/latex/l3packages/xparse/xparse.sty" 1755833708 9783 ab4bee47700c04aadedb8da27591b0ab ""
   "d:/texlive/2025/texmf-dist/tex/latex/l3packages/xtemplate/xtemplate.sty" 1755833708 1308 87acdbdf1ed70c3b07e2090f15bd3635 ""
   "d:/texlive/2025/texmf-dist/tex/latex/listings/listings.cfg" 1755833789 1865 301ae3c26fb8c0243307b619a6aa2dd3 ""
@@ -211,6 +213,7 @@
   "d:/texlive/2025/texmf-dist/tex/latex/listings/lstlang1.sty" 1755833789 206518 4eb59a801ad842a713fa168c34227290 ""
   "d:/texlive/2025/texmf-dist/tex/latex/listings/lstmisc.sty" 1755833789 77051 be68720e5402397a830abb9eed5a2cb4 ""
   "d:/texlive/2025/texmf-dist/tex/latex/listings/lstpatch.sty" 1755833789 353 9024412f43e92cd5b21fe9ded82d0610 ""
+  "d:/texlive/2025/texmf-dist/tex/latex/mhchem/mhchem.sty" 1755833919 133877 abeecc93dabd0b08364240f40830f21b ""
   "d:/texlive/2025/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty" 1755834132 1090 bae35ef70b3168089ef166db3e66f5b2 ""
   "d:/texlive/2025/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty" 1755834132 373 00b204b1d7d095b892ad31a7494b0373 ""
   "d:/texlive/2025/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65.sty" 1755834132 21013 f4ff83d25bb56552493b030f27c075ae ""
@@ -225,6 +228,7 @@
   "d:/texlive/2025/texmf-dist/tex/latex/physics/physics.sty" 1755834152 29610 a9597219b282d9c78b02393dcd7d4322 ""
   "d:/texlive/2025/texmf-dist/tex/latex/refcount/refcount.sty" 1755834321 9878 9e94e8fa600d95f9c7731bb21dfb67a4 ""
   "d:/texlive/2025/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty" 1755834329 9714 ba3194bd52c8499b3f1e3eb91d409670 ""
+  "d:/texlive/2025/texmf-dist/tex/latex/tools/calc.sty" 1755834656 10214 61188260d324e94bc2f66825d7d3fdf4 ""
   "d:/texlive/2025/texmf-dist/tex/latex/tools/enumerate.sty" 1755834656 3468 ad69b54642e68f9fdf39ec1a16dd7341 ""
   "d:/texlive/2025/texmf-dist/tex/latex/tools/indentfirst.sty" 1755834656 1618 d81d7e8646081fd4049b99a8cd8a91df ""
   "d:/texlive/2025/texmf-dist/tex/latex/url/url.sty" 1755834743 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
@@ -238,11 +242,14 @@
   "d:/texlive/2025/texmf-dist/web2c/texmf.cnf" 1755832685 42148 61becc7c670cd061bb319c643c27fdd4 ""
   "d:/texlive/2025/texmf-var/web2c/xetex/xelatex.fmt" 1755835303 5639840 d83da6c17be3de9096fb4190bb794f06 ""
   "d:/texlive/2025/texmf.cnf" 1755834878 713 e69b156964470283e0530f5060668171 ""
-  "notebook.aux" 1760317960 1819 aa3633d2269a4fd8c585f8d6dc1d020a "xelatex"
-  "notebook.bbl" 1760317417 756 1188e3952c97085571fe576d84427289 "bibtex notebook"
-  "notebook.out" 1760317960 2110 53dc0a485f80b33d34e6a4bba9f54169 "xelatex"
-  "notebook.tex" 1760317957 5275 ef6259ead1b3cf3f349b3119aca0a398 ""
-  "notebook.toc" 1760317960 921 fbf8fe25ebc239fe07b0015758bdfff3 "xelatex"
+  "figures/hfs_time_dependence_C2H2.png" 1760324922 55402 267ea86532938b39c66989aaab931e16 ""
+  "figures/hfs_time_dependence_H2.png" 1760322506 70592 9ca479885684330310670b1c469cba1d ""
+  "figures/hfs_time_dependence_HCl.png" 1760325304 60258 23f0e10578e9f6fe76505c93ab41b70c ""
+  "notebook.aux" 1760325658 2706 ec6748f80f05e44e7a55dc8d874d4a9e "xelatex"
+  "notebook.bbl" 1760325656 756 1188e3952c97085571fe576d84427289 "bibtex notebook"
+  "notebook.out" 1760325658 2110 53dc0a485f80b33d34e6a4bba9f54169 "xelatex"
+  "notebook.tex" 1760325657 8599 2105bbf9e1d83b406a05246a2ecd7797 ""
+  "notebook.toc" 1760325658 1048 9dc90b516c457ac99bd71805e8189265 "xelatex"
   (generated)
   "notebook.aux"
   "notebook.log"

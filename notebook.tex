@@ -19,6 +19,8 @@
 \usepackage{graphicx}
 \usepackage[a4paper, left=2cm, right=2cm, top=1cm, bottom=2cm]{geometry}% 设置页边距
 \usepackage{ctex}
+\usepackage{mhchem} % 化学式宏包
+\numberwithin{equation}{subsection} % number equations within subsections
 %\setCJKmainfont[ItalicFont=Noto Sans CJK SC Bold, BoldFont=Noto Serif CJK SC Black]{Noto Serif CJK SC}
 \lstset{
     columns=fixed,          
@@ -85,8 +87,45 @@ Stimulated Raman adiabatic passage (STIRAP) 是一种利用中间态，将两个
 
 \subsection{Highly Spin-Polarized Atoms and Molecules from Rotationally State-Selected Molecules\cite{rakitzis_highly_2005}}
 
-产生极化原子的方法目前有三种,分别是Stern-Gerlach分离法,光泵浦法(optical pumping)和自旋交换光泵浦法(spin-exchange optical pumping)。本篇论文展示了如何使用光学方法产生100\%的核极化，使用脉冲的激光或者微波可以产生具有量子数$J$和$M$的旋转极化的分子，之后将旋转的极化耦合到非极化的核自旋上，通过超精细作用实现极化的传递。
+产生极化原子的方法目前有三种,分别是Stern-Gerlach分离法,光泵浦法(optical pumping)和自旋交换光泵浦法(spin-exchange optical pumping)。本篇论文展示了如何使用光学方法产生100\%的核极化，使用脉冲的激光或者微波可以产生具有量子数$J$和$M$的旋转极化的分子，之后将旋转的极化耦合到非极化的核自旋上，通过超精细作用实现极化的传递。超精细结构的变化可以使核极化在零和最大值之间循环，同时旋转极化表现出相反的行为，在一些情况下，泵浦的效率有足以克服碰撞导致的去极化，可以使得极化保持在最大值，此外，可以使用第二个激光脉冲对分子在极化最大值的时候进行解离，冻结给定时刻的极化状态从而产生高度极化的原子核。适当延时得到光解离可以产生高密度的极化原子，其密度接近分子密度。
 
+\paragraph{基本原理}
+
+
+\paragraph{不同含氢分子的极化}
+
+在$t = 0$的时刻，使用受激拉曼泵浦(Stimulated Raman Pumping)将$\mathrm{H}_2$激发到转动能级$\phi , j =1 ,m =1$上，$J$的极化度可以使用$A_0^{(1)}(J)= 1/ \sqrt{2}$和$A_0^{(2)} (J) = 1/2$表示，同时也可以用拉曼散射来探测。 开始时候，核自旋$(I = 1)$是非极化的，即$A_0^{k}(I) = 0$。利用超精细结构，我们可以计算$I$和$J$的$m$-state分布的时间依赖性，如图\ref{fig:hfs_time_dependence_H2}。
+\begin{figure}[htbp]
+    \centering
+    \begin{minipage}[b]{0.48\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{figures/hfs_time_dependence_H2.png}
+        \caption{\ce{H2}的极化转移}
+        \label{fig:hfs_time_dependence_H2}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[b]{0.48\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{figures/hfs_time_dependence_C2H2.png}
+        \caption{\ce{C2H2}的极化转移}
+        \label{fig:hfs_time_dependence_C2H2}
+    \end{minipage}
+\end{figure}
+
+在图中我们可以看到，经过8或者10$\mu \mathrm{s}$之后，初始的核极化与旋转极化的分布发生了反转，现在的核极化几乎达到了100\%，而旋转极化则接近于0\%。如果此时快速解离分子，将会产生保留该极化状态的氢原子或者质子。完全的极化转移可能只发生在$J = I$ 的情况下，随着$j$和$I$的增大，极化转移的效率会降低。
+
+对$\ce{C2H2}$分子进行类似的极化过程，激发到$\phi , j = 1 ,m =1$的转动能级上，在300$\mu \mathrm{s}$下，质子的核计划可以达到接近100\%，如图\ref{fig:hfs_time_dependence_C2H2}。与$\ce{H2}$相比, $\ce{C2H2}$可能可以使用单光子跃迁制备初始态，可能更适合光泵浦，同时$\ce{C2H2}$可以被193 nm的紫外光轻松解离。
+
+最后考虑$\ce{H^{35}Cl}$进行极化。$\ce{H^{35}Cl}$中，氢原子核的自旋为$I_{\mathrm{H}} = 1/2$，氯原子核的自旋为$I_{\mathrm{Cl}} = 3/2$，同样的，将$\ce{H^{35}Cl}$激发到$\phi , j = 1 ,m =1$的转动能级上。由于$J$和$I_{\mathrm{Cl}}$的自旋转动耦合要比$J$和$I_{\mathrm{H}}$的耦合强两个数量级以上，因此要用别的公式来描述。$I_{\mathrm{H}}$,$I_{\mathrm{Cl}}$和$J$的$m$-state时间分布如图\ref{fig:hfs_time_dependence_HCl}。
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.4\textwidth]{figures/hfs_time_dependence_HCl.png}
+    \caption{\ce{H^{35}Cl}的极化转移}
+    \label{fig:hfs_time_dependence_HCl}    
+\end{figure}    
+
+大约在激发后145ns，$<m_{\mathrm{Cl}}>$从0增加到1.2
 
 
 

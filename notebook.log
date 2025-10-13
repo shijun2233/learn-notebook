@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.8.22)  13 OCT 2025 09:12
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.8.22)  13 OCT 2025 11:20
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -697,37 +697,82 @@ Package fontspec Info:
 
 )) (d:/texlive/2025/texmf-dist/tex/latex/ctex/config/ctex.cfg
 File: ctex.cfg 2022/07/14 v2.5.10 Configuration file (CTEX)
+) (d:/texlive/2025/texmf-dist/tex/latex/mhchem/mhchem.sty
+Package: mhchem 2024/01/29 v4.10 for typesetting chemical formulae
+ (d:/texlive/2025/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
+Package: l3keys2e 2024-08-16 LaTeX2e option processing using LaTeX3 keys
+) (d:/texlive/2025/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2023/07/08 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count367
+\calc@Bcount=\count368
+\calc@Adimen=\dimen322
+\calc@Bdimen=\dimen323
+\calc@Askip=\skip63
+\calc@Bskip=\skip64
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count369
+\calc@Cskip=\skip65
+) (d:/texlive/2025/texmf-dist/tex/latex/chemgreek/chemgreek.sty
+Package: chemgreek 2020/01/16 v1.1a interface for upright Greek letters for use in chemistry (CN)
+\l__chemgreek_tmpa_int=\count370
+\g__chemgreek_tmpa_int=\count371
+)
+\l__mhchem_ce_distanceFromLastComma_int=\count372
+\__mhchem_arrow_extPgfLength_skip=\skip66
+\mhchem@minispace@tmp=\skip67
+\mhchem@minibackspace@tmp=\skip68
+\mhchem@bondwidth=\skip69
+\mhchem@bondheight=\skip70
+\mhchem@smallbondwidth@tmpA=\skip71
+\mhchem@smallbondwidth@tmpB=\skip72
+\mhchem@smallbondwidth=\skip73
+\mhchem@bondtmp@minussidebearingleft=\skip74
+\mhchem@bondtmp@minussidebearingright=\skip75
+\l__mhchem_option_version_int=\count373
+\mhchem@option@minusmathsidebearingleft=\dimen324
+\mhchem@option@minusmathsidebearingright=\dimen325
+\mhchem@option@minustextsidebearingleft=\dimen326
+\mhchem@option@minustextsidebearingright=\dimen327
+
+
+Package mhchem Warning: You did not specify a 'version' option for the mhchem
+(mhchem)                package. Please write \usepackage[version=4]{mhchem}
+(mhchem)                in your preamble (or any lower number for
+(mhchem)                compatibility mode), because you might get slightly
+(mhchem)                different output with the same input in future versions.
+
 ) (d:/texlive/2025/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2024/09/23 1.10c listings language file
 ) (./notebook.aux)
 \openout1 = `notebook.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-Package hyperref Info: Link coloring OFF on input line 38.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+Package hyperref Info: Link coloring OFF on input line 40.
  (./notebook.out) (./notebook.out)
 \@outlinefile=\write4
 \openout4 = `notebook.out'.
 
-\c@lstlisting=\count367
+\c@lstlisting=\count374
 
 Package pgfplots notification 'compat/show suggested version=true': document has been generated with the most recent feature set (\pgfplotsset{compat=1.18}).
 
@@ -772,61 +817,64 @@ Package fontspec Info:
 
 \symlegacymaths=\mathgroup6
 LaTeX Font Info:    Overwriting symbol font `legacymaths' in version `bold'
-(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 38.
-LaTeX Font Info:    Redeclaring math accent \acute on input line 38.
-LaTeX Font Info:    Redeclaring math accent \grave on input line 38.
-LaTeX Font Info:    Redeclaring math accent \ddot on input line 38.
-LaTeX Font Info:    Redeclaring math accent \tilde on input line 38.
-LaTeX Font Info:    Redeclaring math accent \bar on input line 38.
-LaTeX Font Info:    Redeclaring math accent \breve on input line 38.
-LaTeX Font Info:    Redeclaring math accent \check on input line 38.
-LaTeX Font Info:    Redeclaring math accent \hat on input line 38.
-LaTeX Font Info:    Redeclaring math accent \dot on input line 38.
-LaTeX Font Info:    Redeclaring math accent \mathring on input line 38.
-LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 38.
-LaTeX Font Info:    Redeclaring math symbol \Delta on input line 38.
-LaTeX Font Info:    Redeclaring math symbol \Theta on input line 38.
-LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 38.
-LaTeX Font Info:    Redeclaring math symbol \Xi on input line 38.
-LaTeX Font Info:    Redeclaring math symbol \Pi on input line 38.
-LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 38.
-LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 38.
-LaTeX Font Info:    Redeclaring math symbol \Phi on input line 38.
-LaTeX Font Info:    Redeclaring math symbol \Psi on input line 38.
-LaTeX Font Info:    Redeclaring math symbol \Omega on input line 38.
-LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 38.
-LaTeX Font Info:    Redeclaring symbol font `operators' on input line 38.
+(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 40.
+LaTeX Font Info:    Redeclaring math accent \acute on input line 40.
+LaTeX Font Info:    Redeclaring math accent \grave on input line 40.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 40.
+LaTeX Font Info:    Redeclaring math accent \tilde on input line 40.
+LaTeX Font Info:    Redeclaring math accent \bar on input line 40.
+LaTeX Font Info:    Redeclaring math accent \breve on input line 40.
+LaTeX Font Info:    Redeclaring math accent \check on input line 40.
+LaTeX Font Info:    Redeclaring math accent \hat on input line 40.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 40.
+LaTeX Font Info:    Redeclaring math accent \mathring on input line 40.
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 40.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 40.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 40.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 40.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 40.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 40.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 40.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 40.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 40.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 40.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 40.
+LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 40.
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 40.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `normal' on input line 38.
+(Font)              `operators' in the math version `normal' on input line 40.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> TU/lmr/m/n on input line 38.
+(Font)                  OT1/cmr/m/n --> TU/lmr/m/n on input line 40.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `bold' on input line 38.
+(Font)              `operators' in the math version `bold' on input line 40.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> TU/lmr/m/n on input line 38.
+(Font)                  OT1/cmr/bx/n --> TU/lmr/m/n on input line 40.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  TU/lmr/m/n --> TU/lmr/m/n on input line 38.
+(Font)                  TU/lmr/m/n --> TU/lmr/m/n on input line 40.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> TU/lmr/m/it on input line 38.
+(Font)                  OT1/cmr/m/it --> TU/lmr/m/it on input line 40.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> TU/lmr/b/n on input line 38.
+(Font)                  OT1/cmr/bx/n --> TU/lmr/b/n on input line 40.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 38.
+(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 40.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 38.
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 40.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  TU/lmr/m/n --> TU/lmr/b/n on input line 38.
+(Font)                  TU/lmr/m/n --> TU/lmr/b/n on input line 40.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> TU/lmr/b/it on input line 38.
+(Font)                  OT1/cmr/bx/it --> TU/lmr/b/it on input line 40.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> TU/lmss/b/n on input line 38.
+(Font)                  OT1/cmss/bx/n --> TU/lmss/b/n on input line 40.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/b/n on input line 38.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 43.
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/b/n on input line 40.
+
+Package chemgreek Info: Activating mapping `fontspec' on line 40.
+
+LaTeX Font Info:    Trying to load font information for U+msa on input line 45.
 (d:/texlive/2025/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 43.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 45.
  (d:/texlive/2025/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) (./notebook.toc)
@@ -840,57 +888,67 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\@ifnextchar' on input line 56.
+(hyperref)                removing `\@ifnextchar' on input line 58.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 56.
+(hyperref)                removing `subscript' on input line 58.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 56.
+(hyperref)                removing `subscript' on input line 58.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\@ifnextchar' on input line 70.
+(hyperref)                removing `\@ifnextchar' on input line 72.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 70.
+(hyperref)                removing `subscript' on input line 72.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 70.
+(hyperref)                removing `subscript' on input line 72.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\@ifnextchar' on input line 86.
+(hyperref)                removing `\@ifnextchar' on input line 88.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 86.
+(hyperref)                removing `subscript' on input line 88.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 86.
+(hyperref)                removing `subscript' on input line 88.
+
+File: figures/hfs_time_dependence_H2.png Graphic file (type bmp)
+<figures/hfs_time_dependence_H2.png>
+File: figures/hfs_time_dependence_C2H2.png Graphic file (type bmp)
+<figures/hfs_time_dependence_C2H2.png>
+
+
+[2]
+File: figures/hfs_time_dependence_HCl.png Graphic file (type bmp)
+<figures/hfs_time_dependence_HCl.png>
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 94.
+(hyperref)                removing `math shift' on input line 133.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `superscript' on input line 94.
+(hyperref)                removing `superscript' on input line 133.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 94.
+(hyperref)                removing `math shift' on input line 133.
 
 
 
-[2] (./notebook.bbl)
+[3] (./notebook.bbl)
 
-[3] (./notebook.aux)
+[4] (./notebook.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2022/07/14>
@@ -899,12 +957,12 @@ Package rerunfilecheck Info: File `notebook.out' has not changed.
 (rerunfilecheck)             Checksum: 53DC0A485F80B33D34E6A4BBA9F54169;2110.
  ) 
 Here is how much of TeX's memory you used:
- 37425 strings out of 473832
- 909994 string characters out of 5733158
- 1599627 words of memory out of 5000000
- 59871 multiletter control sequences out of 15000+600000
+ 38403 strings out of 473832
+ 932976 string characters out of 5733158
+ 1643711 words of memory out of 5000000
+ 60829 multiletter control sequences out of 15000+600000
  571669 words of font info for 113 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 93i,6n,111p,773b,479s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 93i,18n,111p,773b,666s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on notebook.xdv (3 pages, 34548 bytes).
+Output written on notebook.xdv (4 pages, 50244 bytes).
