@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.8.22)  13 OCT 2025 11:20
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.8.22)  13 OCT 2025 16:11
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -922,33 +922,37 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `subscript' on input line 88.
 
+
+
+[2]
 File: figures/hfs_time_dependence_H2.png Graphic file (type bmp)
 <figures/hfs_time_dependence_H2.png>
 File: figures/hfs_time_dependence_C2H2.png Graphic file (type bmp)
 <figures/hfs_time_dependence_C2H2.png>
-
-
-[2]
-File: figures/hfs_time_dependence_HCl.png Graphic file (type bmp)
-<figures/hfs_time_dependence_HCl.png>
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 133.
+File: figures/hfs_time_dependence_HCl_1.png Graphic file (type bmp)
+<figures/hfs_time_dependence_HCl_1.png>
+File: figures/hfs_time_dependence_HCl_2.png Graphic file (type bmp)
+<figures/hfs_time_dependence_HCl_2.png>
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `superscript' on input line 133.
+(hyperref)                removing `math shift' on input line 160.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 133.
+(hyperref)                removing `superscript' on input line 160.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 160.
 
 
 
-[3] (./notebook.bbl)
+[3]
 
-[4] (./notebook.aux)
+[4] (./notebook.bbl)
+
+[5] (./notebook.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2022/07/14>
@@ -957,12 +961,12 @@ Package rerunfilecheck Info: File `notebook.out' has not changed.
 (rerunfilecheck)             Checksum: 53DC0A485F80B33D34E6A4BBA9F54169;2110.
  ) 
 Here is how much of TeX's memory you used:
- 38403 strings out of 473832
- 932976 string characters out of 5733158
- 1643711 words of memory out of 5000000
- 60829 multiletter control sequences out of 15000+600000
+ 38418 strings out of 473832
+ 933509 string characters out of 5733158
+ 1647711 words of memory out of 5000000
+ 60843 multiletter control sequences out of 15000+600000
  571669 words of font info for 113 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 93i,18n,111p,773b,666s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 93i,14n,111p,773b,667s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on notebook.xdv (4 pages, 50244 bytes).
+Output written on notebook.xdv (5 pages, 59940 bytes).

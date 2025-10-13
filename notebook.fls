@@ -412,9 +412,12 @@ INPUT ./figures/hfs_time_dependence_H2.png
 INPUT ./figures/hfs_time_dependence_C2H2.png
 INPUT ./figures/hfs_time_dependence_C2H2.png
 INPUT ./figures/hfs_time_dependence_C2H2.png
-INPUT ./figures/hfs_time_dependence_HCl.png
-INPUT ./figures/hfs_time_dependence_HCl.png
-INPUT ./figures/hfs_time_dependence_HCl.png
+INPUT ./figures/hfs_time_dependence_HCl_1.png
+INPUT ./figures/hfs_time_dependence_HCl_1.png
+INPUT ./figures/hfs_time_dependence_HCl_1.png
+INPUT ./figures/hfs_time_dependence_HCl_2.png
+INPUT ./figures/hfs_time_dependence_HCl_2.png
+INPUT ./figures/hfs_time_dependence_HCl_2.png
 INPUT d:/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm
 INPUT d:/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmmi9.tfm
 INPUT d:/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm
