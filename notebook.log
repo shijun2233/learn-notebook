@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.8.22)  13 OCT 2025 16:11
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.8.22)  21 OCT 2025 08:54
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -935,6 +935,8 @@ File: figures/hfs_time_dependence_HCl_2.png Graphic file (type bmp)
 <figures/hfs_time_dependence_HCl_2.png>
 
 
+[3]
+
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 160.
 
@@ -947,8 +949,18 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 160.
 
 
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@ifnextchar' on input line 161.
 
-[3]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 161.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 161.
+
+
 
 [4] (./notebook.bbl)
 
@@ -958,15 +970,15 @@ LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2022/07/14>
  ***********
 Package rerunfilecheck Info: File `notebook.out' has not changed.
-(rerunfilecheck)             Checksum: 53DC0A485F80B33D34E6A4BBA9F54169;2110.
+(rerunfilecheck)             Checksum: 91A4D0840B5EC35AB676AD64C834A1A9;2500.
  ) 
 Here is how much of TeX's memory you used:
- 38418 strings out of 473832
- 933509 string characters out of 5733158
+ 38420 strings out of 473832
+ 933544 string characters out of 5733158
  1647711 words of memory out of 5000000
- 60843 multiletter control sequences out of 15000+600000
+ 60845 multiletter control sequences out of 15000+600000
  571669 words of font info for 113 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  93i,14n,111p,773b,667s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on notebook.xdv (5 pages, 59940 bytes).
+Output written on notebook.xdv (5 pages, 63692 bytes).
