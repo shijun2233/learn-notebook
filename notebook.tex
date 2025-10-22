@@ -170,7 +170,34 @@ p(J = 1, m = -1) &= \frac{1}{3}\left(1 - \frac{3}{\sqrt{2}} A_0^{(1)} + A_0^{(2)
 
 综合以上原因，$^{3}\mathrm{He}^{2+}$在2~ 16 GHz的ECR离子源中的退极化要大于氢原子。因此使用蒙特卡洛方法对$^{3}\mathrm{He}$,$^{3}\mathrm{He}^{+}$,$^{3}\mathrm{He}^{2+}$在ECR离子源中的多重电离、复合与碰撞过程进行模拟。接下来介绍ECR离子源中退极化的机制。
 \paragraph{Depolarization due to insufficient magnetic decoupling field}
-当原子或离子具有不成对电子时，不成对电子和原子核之间的超精细相互作用可以导致退极化。
+当原子或离子具有不成对电子时，不成对电子和原子核之间的超精细相互作用可以导致退极化。存在一个临界磁场$B_c$正比于超精细结构强度，如果外场$B$远大于$B_{c}$将会引起核自旋与电子自选的解耦，将减少退极化。极化度与磁场的关系为
+\begin{equation}
+    P = 1 - \frac{1}{2(1 + \frac{B}{B_c})^2}
+    \label{eq:depolarization_due_to_insufficient_magnetic_decoupling_field}
+\end{equation}
+将完全极化的($P_0 = 1.0 $)的$^{1}\mathrm{S}^{1}$态的$^{3}\mathrm{He}$引入到ECR离子源中。原子形态的$^{3}\mathrm{He}$不会发生退极化，因为没有不成对电子，电离会形成$^{3}\mathrm{He}^{+}$，此时会根据式\ref{eq:depolarization_due_to_insufficient_magnetic_decoupling_field}计算退极化。之后$^{3}\mathrm{He}^{+}$会被非弹性散射激发或者电离，低能电子对$^{3}\mathrm{He}^{+}$的非弹性散射激发截面远大于电离界面，因此$^{3}\mathrm{He}^{+}$会被对此激发，被激发的$3\mathrm{He}^{+}$会退激发到基态，如果外部磁场不足以引起极化的解耦，在退激发的过程中由于电子的自选翻转(spin-flip)会引起退极化。可以解耦$^{3}\mathrm{He}^{+}$精细结构的磁场要大于16 T。由于激发态$^{3}\mathrm{He}^{+}$的超精细结构相互作用远小于基态$^{3}\mathrm{He}^{+}$的超精细结构相互作用。因此退激发过程不会受到不成对电子的影响。但是只要退激发存在，就会引起核极化度的下降：
+\begin{equation}
+    P = 1 - \frac{1}{2(1 + \frac{B}{B_c})^2}
+    \label{eq:depolarization_due_to_insufficient_magnetic_decoupling_field}
+\end{equation}
+与 equation\ref{eq:depolarization_due_to_insufficient_magnetic_decoupling_field}相同，由于退激发的影响，在电离之前的多次非弹性散射会导致严重的退极化。
+
+当$^{3}\mathrm{He}^{+}$被电离为$^{3}\mathrm{He}^{++}$的时候，没有电子，就没有超精细结构，因此不会发生退极化。但是当离子限制时间足够场，就可能发生以下方程描述的复合过程：
+\begin{align}
+^3\text{He}^{2+} + \text{RG} &\rightarrow ^3\text{He}^+ + \text{RG}^+ \\
+^3\text{He}^+ + \text{RG} &\rightarrow ^3\text{He} + \text{RG}^+
+\label{eq:de-ionization_process}
+\end{align}
+符合过程产生处在$3\text{S}_1$态的$^{3}\mathrm{He}$与$^{3}\mathrm{He}^{+}$时，这两种产物都有不成对电子，会引起退极化。更长的约束时间会引起更多的电离符合过程，导致更大的退极化。 
+
+\paragraph{Depolarization due to the ESR transitions}
+
+
+
+
+
+
+
 
 
 

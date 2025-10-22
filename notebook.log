@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.8.22)  21 OCT 2025 13:55
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.8.22)  22 OCT 2025 09:38
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -744,7 +744,11 @@ Package mhchem Warning: You did not specify a 'version' option for the mhchem
 
 ) (d:/texlive/2025/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2024/09/23 1.10c listings language file
-) (./notebook.aux)
+) (./notebook.aux
+
+LaTeX Warning: Label `eq:depolarization_due_to_insufficient_magnetic_decoupling_field' multiply defined.
+
+)
 \openout1 = `notebook.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 40.
@@ -962,23 +966,29 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
 
 
-[4] (./notebook.bbl)
+[4]
 
-[5] (./notebook.aux)
+[5] (./notebook.bbl)
+
+[6] (./notebook.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2022/07/14>
  ***********
+
+
+LaTeX Warning: There were multiply-defined labels.
+
 Package rerunfilecheck Info: File `notebook.out' has not changed.
-(rerunfilecheck)             Checksum: 2BF13855BFDE3DE7ECF42F0332F20B74;2497.
+(rerunfilecheck)             Checksum: 37357B725C8EA92344E54AF16CE967B3;2497.
  ) 
 Here is how much of TeX's memory you used:
- 38434 strings out of 473832
- 934402 string characters out of 5733158
+ 38436 strings out of 473832
+ 934493 string characters out of 5733158
  1647711 words of memory out of 5000000
- 60859 multiletter control sequences out of 15000+600000
+ 60861 multiletter control sequences out of 15000+600000
  571669 words of font info for 113 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  93i,14n,111p,773b,667s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on notebook.xdv (5 pages, 74024 bytes).
+Output written on notebook.xdv (6 pages, 86400 bytes).
