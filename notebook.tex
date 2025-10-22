@@ -191,7 +191,33 @@ p(J = 1, m = -1) &= \frac{1}{3}\left(1 - \frac{3}{\sqrt{2}} A_0^{(1)} + A_0^{(2)
 符合过程产生处在$3\text{S}_1$态的$^{3}\mathrm{He}$与$^{3}\mathrm{He}^{+}$时，这两种产物都有不成对电子，会引起退极化。更长的约束时间会引起更多的电离符合过程，导致更大的退极化。 
 
 \paragraph{Depolarization due to the ESR transitions}
-除了不成对带脑子导致的退极化之外，ECR源中的微波也可以导致退极化。ECR的频率大约等于ESR(Electron Spin Resonance)的频率。对于质子来说，50 W的微波功率不足以支撑起退极化，因为质子在共振区的时间只有3 ns，电子不足以反转，而且此时的磁场足以解耦质子的超精细结构。但是对于氦3，情况有所不同：磁场不足以引起氦3的超精细结构解耦，
+除了不成对电子导致的退极化之外，ECR源中的微波也可以导致退极化。ECR的频率大约等于ESR(Electron Spin Resonance)的频率。对于质子来说，50 W的微波功率不足以支撑起退极化，因为质子在共振区的时间只有3 ns，电子不足以反转，而且此时的磁场足以解耦质子的超精细结构。但是对于氦3，情况有所不同：磁场不足以引起氦3的超精细结构解耦，氦3会被等离子体反射，，导致多次穿过ESR区域。每次反射，暴露在ESR区域的时间是
+\begin{equation}
+    \Delta t  = \frac{\Delta L^{eff}}{v_{ion}}
+    \label{eq:time_exposed_in_ESR_region}
+\end{equation}
+其中$\Delta L^{eff}$是ESR的有效共振区，$v_{ion}$是离子的移动速度。这段时间内的电子进动角可以表示为：
+\begin{equation}
+    \Delta \theta = \gamma_J B_1  \Delta t
+    \label{eq:electron_rotation_angle}
+\end{equation}
+其中$\gamma_J$是电子的旋磁比，$B_1$是微波磁场的幅值。在约束时间内的反射次数可以表示为：
+\begin{equation}
+    N = \frac{v_{ion} T_{ion}}{L_{plasma}}
+    \label{eq:number_of_reflections}
+\end{equation}
+其中$T_{ion}$是离子的约束时间，$L_{plasma}$是ECR等离子体的平均长度。因此，进动角可以表示为：
+\begin{equation}
+    \Theta = \Delta \theta \sqrt{N}
+    \label{eq:electron_rotation_angle_with_number_of_reflections}
+\end{equation}
+假设离子的限制时间为1 ms，在14.5GHz，500W运行功率下，进动角$\Theta$大约为 2.7 rad。ESR跃迁会产生$\mathbb{1} \leftrightarrow \mathbb{3}$和$\mathbb{2} \leftrightarrow \mathbb{4}$的跃迁，这两种跃迁会引起退极化，可以由以下公式表示：
+\begin{equation}
+    P =\frac{\abs{x}}{\sqrt{1+x^2}} 
+    \label{eq:depolarization_due_to_ESR_transitions}
+\end{equation}
+
+\paragraph{数值模拟计算}
 
 
 
