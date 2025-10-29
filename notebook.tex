@@ -20,6 +20,7 @@
 \usepackage[a4paper, left=2cm, right=2cm, top=1cm, bottom=2cm]{geometry}% 设置页边距
 \usepackage{ctex}
 \usepackage{mhchem} % 化学式宏包
+\usepackage{booktabs} % for professional-looking tables
 \numberwithin{equation}{subsection} % number equations within subsections
 %\setCJKmainfont[ItalicFont=Noto Sans CJK SC Bold, BoldFont=Noto Serif CJK SC Black]{Noto Serif CJK SC}
 \lstset{
@@ -191,6 +192,36 @@ ANKE与Petersburg Nuclear Physics Institute (PNPI)合作开发了一个装置，
 
 同时，图\ref{fig:polarized_H2_D2_HD_apparatus}中的装置也可以用来产生极化分子。预计可以产生能量为数keV，流强20 $\mu$A,极化度高于0.8的束流。通过优化也可能达到mA级别的流强。有几个令人兴奋的是，氢分子的电离界面是高于氢原子的，并且分子的剥离注入截面更高。如果使用$\ce{HD+}$分子，就可以控制储存环在极化质子与极化氘之间任意切换，而不用改变源。
 
+
+\subsection{Production of HD Molecules in Definite Hyperfine Substates\cite{engels_production_2020}}
+
+给出氢原子与氘原子的能级表格\ref{tab:hyperfine_substates}：
+
+\begin{table}[h!]
+\centering
+\caption{The definition of the different hyperfine substates in the Zeeman region, described with $F = J + I$, and in the Paschen-Back region, described with $I$ and $J$. For hydrogen atoms in the 1S ground state the critical field amounts to $B_c(\mathrm{H}) = 50.7\,\mathrm{mT}$ and for deuterium to $B_c(\mathrm{D}) = 11.4\,\mathrm{mT}$.}
+\label{tab:hyperfine_substates}
+\begin{tabular}{@{}lccc@{}}
+\toprule
+Isotope & \multicolumn{2}{c}{$B \ll B_c$} & $B \gg B_c$ \\
+ & & $|F, m_F\rangle$ & $|m_J, m_I\rangle$ \\
+\midrule
+H & $|H_1\rangle$ & $|1, 1\rangle$ & $|1/2, 1/2\rangle$ \\
+ & $|H_2\rangle$ & $|1, 0\rangle$ & $|1/2, -1/2\rangle$ \\
+ & $|H_3\rangle$ & $|1, -1\rangle$ & $|-1/2, -1/2\rangle$ \\
+ & $|H_4\rangle$ & $|0, 0\rangle$ & $|-1/2, 1/2\rangle$ \\
+\midrule
+D & $|D_1\rangle$ & $|3/2, 3/2\rangle$ & $|1/2, 1\rangle$ \\
+ & $|D_2\rangle$ & $|3/2, 1/2\rangle$ & $|1/2, 0\rangle$ \\
+ & $|D_3\rangle$ & $|3/2, -1/2\rangle$ & $|1/2, -1\rangle$ \\
+ & $|D_4\rangle$ & $|3/2, -3/2\rangle$ & $|-1/2, -1\rangle$ \\
+ & $|D_5\rangle$ & $|1/2, 1/2\rangle$ & $|-1/2, 0\rangle$ \\
+ & $|D_6\rangle$ & $|1/2, +1/2\rangle$ & $|-1/2, 1\rangle$ \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+对于氢分子来说，氢分子中的
 
 
 
