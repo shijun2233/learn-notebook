@@ -154,6 +154,22 @@ p(J = 1, m = -1) &= \frac{1}{3}\left(1 - \frac{3}{\sqrt{2}} A_0^{(1)} + A_0^{(2)
 
 大约在激发后145ns，$\langle m_{\mathrm{Cl}} \rangle$从0增加到1.2，此时解离会得到高度极化的$^{35}\ce{Cl}$原子。在193nm处的光解离会产生电子高度极化的$^{2}\mathrm{P}_{3/2}$与$^{2}\mathrm{P}_{1/2}$的$\ce{Cl}$原子。
 
+\subsection{Preparation of oriented and aligned H2 and HD by stimulated Raman pumping\cite{bartlett_preparation_2008}}
+
+氢分子有两个电子，是最简单的中性双原子分子
+
+
+
+\subsection{Production of Hyperpolarized H2 Molecules from $\overrightarrow{H} $ Atoms in Gas-Storage Cells\cite{engels_production_2015}}
+
+在铜表面符合极化氘或者极化氢之后，得到的极化率是复合前原子的50\%。铜表面的复合过程由Eley-Rideal机制描述，该机制描述了表面的原子与气体中另一个原子的复合。由于共价键的形成与电子交换，复合过程会退极化。
+
+
+
+\subsection{Polarized $\ce{H2}$, $\ce{D2}$ and $\ce{HD}$ Molecules and Their  Possible Use To Feed a Polarized $\ce{H+2}$ ,$\ce{D+2}$ or  $\ce{HD}+$ Ion Source For Stripping Injection Into  Storage Rings \cite{engels_polarized_2022}}
+
+
+
 
 
 \newpage
@@ -169,6 +185,14 @@ p(J = 1, m = -1) &= \frac{1}{3}\left(1 - \frac{3}{\sqrt{2}} A_0^{(1)} + A_0^{(2)
 \end{itemize}
 
 综合以上原因，$^{3}\mathrm{He}^{2+}$在2~ 16 GHz的ECR离子源中的退极化要大于氢原子。因此使用蒙特卡洛方法对$^{3}\mathrm{He}$,$^{3}\mathrm{He}^{+}$,$^{3}\mathrm{He}^{2+}$在ECR离子源中的多重电离、复合与碰撞过程进行模拟。接下来介绍ECR离子源中退极化的机制。
+
+\paragraph{原理}
+ 使用类似氘原子超精细结构的推导，可以得到：
+ \begin{equation}
+      P = 1 - \frac{\sin^{2}(\Delta \omega t /2 )}{2(1 + \frac{B}{B_c})^2}
+     \label{eq:depolarization_due_to_superfine_interaction}
+ \end{equation}
+
 \paragraph{Depolarization due to insufficient magnetic decoupling field}
 当原子或离子具有不成对电子时，不成对电子和原子核之间的超精细相互作用可以导致退极化。存在一个临界磁场$B_c$正比于超精细结构强度，如果外场$B$远大于$B_{c}$将会引起核自旋与电子自选的解耦，将减少退极化。极化度与磁场的关系为
 \begin{equation}
@@ -211,7 +235,7 @@ p(J = 1, m = -1) &= \frac{1}{3}\left(1 - \frac{3}{\sqrt{2}} A_0^{(1)} + A_0^{(2)
     \Theta = \Delta \theta \sqrt{N}
     \label{eq:electron_rotation_angle_with_number_of_reflections}
 \end{equation}
-假设离子的限制时间为1 ms，在14.5GHz，500W运行功率下，进动角$\Theta$大约为 2.7 rad。ESR跃迁会产生$\mathbb{1} \leftrightarrow \mathbb{3}$和$\mathbb{2} \leftrightarrow \mathbb{4}$的跃迁，这两种跃迁会引起退极化，可以由以下公式表示：
+假设离子的限制时间为1 ms，在14.5GHz，500W运行功率下，进动角$\Theta$大约为 2.7 rad。ESR跃迁会产生$\mathbf{1} \leftrightarrow \mathbf{3}$和$\mathbf{2} \leftrightarrow \mathbf{4}$的跃迁，这两种跃迁会引起退极化，可以由以下公式表示：
 \begin{equation}
     P =\frac{\abs{x}}{\sqrt{1+x^2}} 
     \label{eq:depolarization_due_to_ESR_transitions}
@@ -220,7 +244,31 @@ p(J = 1, m = -1) &= \frac{1}{3}\left(1 - \frac{3}{\sqrt{2}} A_0^{(1)} + A_0^{(2)
 \paragraph{数值模拟计算}
 
 
+\subsection{Development of a Polarized 3He++ Ion Source for  the EIC \cite{musgrave_development_2020}}
 
+$^3\text{He}$核由一个中子与两个质子组成，由88.6\%的概率处于空间对称的S-态中，其中质子是纯态，中子可以携带核自旋，因此，极化的$^3\text{He}$是极化中子的替代物。
+
+
+\subsection{Optically polarized $^{3}\mathrm{He}$ \cite{gentile_optically_2017}}
+
+本篇综述介绍了光泵浦制备极化$^3\mathrm{He}$的方法以及相关应用。首先是SEOP(spin-exchange optical pumping)方法。
+
+\paragraph{SEOP}
+
+
+
+\subsection{Fundamental Equations of State for Parahydrogen, Normal Hydrogen, and Orthohydrogen\cite{leachman_fundamental_2009}}
+
+电子和质子都是满足自旋为1/2的费米子，具有反对称的波函数。一个氢分子的总波函数包含震动、旋转和核自旋的波函数，三者的乘积组成总波函数。
+\begin{equation}
+    \psi_{total} = \psi_{vib} \psi_{rot} \psi_{spin}
+    \label{eq:total_wave_function}
+\end{equation}
+振动项永远是对称项，因此，要整个波函数$\psi_{total}$是反对称的，就有两种情况:
+\begin{eqnarray}
+    (\mathrm{antisym}) & = & (\mathrm{sym}) (\mathrm{sym}) (\mathrm{antisym})  \\
+    (\mathrm{antisym}) & = & (\mathrm{sym}) (\mathrm{antisym}) (\mathrm{sym})
+\end{eqnarray}
 
 
 

@@ -1,10 +1,40 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
+
+\bibitem{bartlett_preparation_2008}
+Nate C.~M. Bartlett, Daniel~J. Miller, Richard~N. Zare, Dimitris Sofikitis, T.~Peter~Rakitzis, and Andrew~J. Alexander.
+\newblock Preparation of oriented and aligned h2 and {HD} by stimulated raman pumping.
+\newblock 129(8):084312.
+
+\bibitem{engels_production_2015}
+R.~Engels, M.~Gaißer, R.~Gorski, K.~Grigoryev, M.~Mikirtychyants, A.~Nass, F.~Rathmann, H.~Seyfarth, H.~Ströher, P.~Weiss, L.~Kochenda, P.~Kravtsov, V.~Trofimov, N.~Tschernov, A.~Vasilyev, M.~Vznuzdaev, and H.~Paetz~Gen. Schieck.
+\newblock Production of hyperpolarized h 2 molecules from h → atoms in gas-storage cells.
+\newblock 115(11):113007.
+
+\bibitem{engels_polarized_2022}
+Ralf Engels, Kirill Grigoryev, Yury Valdau, and Ralf Gebel.
+\newblock Polarized h$_{\textrm{2}}$ , d$_{\textrm{2}}$ and {HD} molecules and their possible use to feed a polarized {\textbackslash}({\textbackslash}text\{H\}\_\{2\}{\textasciicircum}\{ + \}{\textbackslash}), {\textbackslash}({\textbackslash}text\{D\}\_\{2\}{\textasciicircum}\{ + \}{\textbackslash}) or {HD}$^{\textrm{+}}$ ion source for stripping injection into storage rings.
+\newblock In {\em Proceedings of the 24th International Spin Symposium ({SPIN}2021)}. Journal of the Physical Society of Japan.
+
+\bibitem{gentile_optically_2017}
+T. R. Gentile, P. J. Nacher, B.~Saam, and T. G. Walker.
+\newblock Optically polarized he 3.
+\newblock 89(4):045004.
 
 \bibitem{kannis_spin_2025}
 C.~S. Kannis, R.~Engels, T.~El-Kordy, N.~Faatz, S.~J. Pütz, V.~Verhoeven, T.~P. Rakitzis, and M.~Büscher.
 \newblock Spin manipulation and nuclear polarization enhancement in particle beams with static magnetic fields.
 \newblock 112(1):012801.
 \newblock Publisher: American Physical Society.
+
+\bibitem{leachman_fundamental_2009}
+J.~W. Leachman, R.~T Jacobsen, S.~G. Penoncello, and E.~W. Lemmon.
+\newblock Fundamental equations of state for parahydrogen, normal hydrogen, and orthohydrogen.
+\newblock 38(3):721--748.
+
+\bibitem{musgrave_development_2020}
+Matthew Musgrave, Richard Milner, Grigor Atoian, Ed~Beebe, Shunsuke Ikeda, Sergey Kondrashev, Masahiro Okamura, Andrei Poblaguev, Deepak Raparia, John Ritter, Steven Trabocchi, Anatoli Zelenski, and James Maxwell.
+\newblock Development of a polarized 3he++ ion source for the {EIC}.
+\newblock In {\em Proceedings of The 18th International Workshop on Polarized Sources, Targets, and Polarimetry — {PoS}({PSTP}2019)}, page 043. Sissa Medialab.
 
 \bibitem{rakitzis_highly_2005}
 T.~Peter Rakitzis.
