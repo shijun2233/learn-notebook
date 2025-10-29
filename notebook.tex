@@ -168,6 +168,33 @@ p(J = 1, m = -1) &= \frac{1}{3}\left(1 - \frac{3}{\sqrt{2}} A_0^{(1)} + A_0^{(2)
 
 \subsection{Polarized $\ce{H2}$, $\ce{D2}$ and $\ce{HD}$ Molecules and Their  Possible Use To Feed a Polarized $\ce{H+2}$ ,$\ce{D+2}$ or  $\ce{HD}+$ Ion Source For Stripping Injection Into  Storage Rings \cite{engels_polarized_2022}}
 
+使用专用设备，可以将经过原子束源极化的原子在复合为分子的过程中保持极化不变。由此可以产生两个核具有相同极化的$\ce{H2}$和$\ce{D2}$分子。也可以产生各种极化的$\ce{HD}$分子。可以用来设计为极化分子源。极化离子源目前由两个技术路线，分别是光泵浦和原子束源。两种方案都可以实现高极化度的质子，但是光泵浦无法产生极化氘。然而，目前还没有极化的$\ce{H+2}$或$\ce{D+2}$离子，仅有$\ce{H-}$或者$\ce{D-}$。
+
+要产生极化$\ce{H+2}$或者极化$\ce{D+2}$离子，需要一个场所可以使其复合。这种场所应该避免使用任何铁磁材料，因为铁磁材料表面的梯度场可以引起退极化。同时原子复合形成的分子的过程也会引起退极化，不过幸运的是，这个过程中可以保留一部分核极化。
+
+ANKE与Petersburg Nuclear Physics Institute (PNPI)合作开发了一个装置，用于研究极化源自束的复合过程并测量其极化。该装置的设计如图\ref{fig:polarized_H2_D2_HD_apparatus}所示。
+\begin{figure}
+    \centering
+    \includegraphics[width=0.8\textwidth]{figures/polarized_H2_D2_HD_apparatus.png}
+    \caption{The design of the apparatus to produce polarized molecules and to measure their polarization.}
+    \label{fig:polarized_H2_D2_HD_apparatus}
+\end{figure}
+来自 ABS 的偏振原子束被发送到一个 T 形存储室中，原子在其中存储约 1 毫秒，并且会根据反射过程撞击壁面 100 多次，然后它们将离开储存室。为了保持核极化，需要一个高达 1 T 的外部磁场，该磁场由储存室周围的超导磁体感应而出。液氦冷却管表面由碳颗粒，可以用作低温泵，整个储存室可以承受$10^{-7}$mbar的压力。储存室由fused quartz(熔融石英)制作，长度为400 mm，外径14mm，内径10.8mm。储存室的运行温度在40k - 120k之间可调。左侧的电子枪可以产生数$\mu$A的电子，并被射入到储存室中，储存室内部的镀钨金丝可以让储存室保持keV的正电位。电子会撞击原子或分子使其电离，产生的离子束会被正电位加速进入到LSP中测量极化度。储存室表面可以使用不同方法来制备。磁场是用来保核极化的。核自旋$I$会与转动角动量$j$耦合在一起，如果碰撞使得转动角动量发生改变，那么将不可避免的影响核自旋。通过增加外部磁场，可以将核自旋耦合到外部磁场$B$中，从而减小转动对核自旋的影响。因此，即使数百次与储存室内壁的碰撞也不会引起核自旋的改变，从而保持极化度。图\ref{fig:polarization_vs_magnetic_field}给出极化度随着磁场的变化曲线。
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.6\textwidth]{figures/polarization_vs_magnetic_field.png}
+    \caption{Measurement of the atomic hydrogen (red) and molecular hydrogen polarization (green) as function of the external magnetic field. At magnetic fields higher than 0.3 T the nuclear polarization of $P_z = -0.84 \pm 0.02$ is preserved in the molecules.}
+    \label{fig:polarization_vs_magnetic_field}
+\end{figure}
+
+在不同材料表面，退极化的程度也是不同的。例如，在金或者铜的表面复合后，极化度仅为0.45，是ABS原子束极化度的50\%。但是在Fomblin表面，极化可以被完全保持，其表面的极化过程如下：氢原子的质子与电子会在表面分离，质子在和另一个原子结合之前会被俘获在势阱中。
+
+同时，图\ref{fig:polarized_H2_D2_HD_apparatus}中的装置也可以用来产生极化分子。预计可以产生能量为数keV，流强20 $\mu$A,极化度高于0.8的束流。通过优化也可能达到mA级别的流强。有几个令人兴奋的是，氢分子的电离界面是高于氢原子的，并且分子的剥离注入截面更高。如果使用$\ce{HD+}$分子，就可以控制储存环在极化质子与极化氘之间任意切换，而不用改变源。
+
+
+
+
+
 
 
 
