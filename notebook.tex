@@ -54,8 +54,54 @@
 \section{极化H/D源}  
 
 
+\subsection{Studies on Beam Formation in an Atomic Beam Source\cite{nass_studies_2009}}
+
+可以使用Direct Simulation Monte-Carlo Method(DSMC)在分子层面上模拟原子束源超音速束流的气体膨胀。使用quadrupole mass spectrometer (QMS)测量解离率，使用TOF测量速度分布，并且将测得的速度分布与模拟结果进行对比，对比结果如表\ref{tab:beam_parameters_comparison}所示。
+
+\begin{table}[h!]
+\centering
+\caption{Comparison of the calculated and measured parameters of (i) a pure molecular and (ii) a partly dissociated hydrogen beam. For the partly dissociated beam $\alpha = 0.63$.}
+\label{tab:beam_parameters_comparison}
+\begin{tabular}{lcc}
+\hline
+ & $V_x$ (m/s) & $T_{\text{tr},x}$ (K) \\
+\hline
+\textbf{Molecular beam} & & \\
+\quad Measurement & $1274 \pm 8 \pm 13$ & $19.0 \pm 1.1 \pm 0.9$ \\
+\quad Simulation (original) & $1334 \pm 12^{+5}_{-15}$ & $33.3 \pm 1.6^{+0}_{-3}$ \\
+\quad Simulation (Ref. [6]) & $1371 \pm 2^{+5}_{-15}$ & $19.0 \pm 0.2$ \\
+\\
+\textbf{Partly dissociated beam} & & \\
+\quad Atoms & & \\
+\quad\quad Measurement & $1750 \pm 47 \pm 24$ & $25.7 \pm 4.9 \pm 1.5$ \\
+\quad\quad Simulation & $1760 \pm 20^{+6}_{-19}$ & $41.0 \pm 3.4^{+9}_{-3}$ \\
+\quad Molecules & & \\
+\quad\quad Measurement & $1579 \pm 51 \pm 17$ & $23.7 \pm 7.1 \pm 1.0$ \\
+\quad\quad Simulation & $1590 \pm 33^{+6}_{-17}$ & $44.0 \pm 4.3^{+0}_{-3}$ \\
+\hline
+\end{tabular}
+\end{table}
+在层流-分子流过渡区，DSMC可准确预测束流速度，但横向温度对碰撞模型参数敏感，需进一步优化。因此，DSMC可用于设计和优化原子束源。
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\newpage
 \section{极化氢分子源}
 
 \subsection{Stimulated Raman adiabatic passage in physics,  chemistry, and beyond\cite{vitanov_stimulated_2017}}

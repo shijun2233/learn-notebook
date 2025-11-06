@@ -1,0 +1,14 @@
+# Fdb version 4
+["xdvipdfmx"] 0 "notebook.xdv" "notebook.pdf" "notebook" 0 -1
+  "notebook.xdv" 0 -1 0 "xelatex"
+  (generated)
+  "notebook.pdf"
+  (rewritten before read)
+["xelatex"] 0 "d:/Documents/SPIS/论文学习笔记/notebook.tex" "notebook.xdv" "notebook" 0 -1
+  "d:/Documents/SPIS/论文学习笔记/notebook.tex" 0 -1 0 ""
+  "notebook.aux" 0 -1 0 "xelatex"
+  (generated)
+  "notebook.aux"
+  "notebook.log"
+  "notebook.xdv"
+  (rewritten before read)

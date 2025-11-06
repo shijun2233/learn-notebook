@@ -1,0 +1,5 @@
+PWD d:/Documents/SPIS/论文学习笔记
+INPUT d:/texlive/2025/texmf.cnf
+INPUT d:/texlive/2025/texmf-dist/web2c/texmf.cnf
+INPUT d:/texlive/2025/texmf-var/web2c/xetex/xelatex.fmt
+INPUT d:/Documents/SPIS/论文学习笔记/notebook.tex
