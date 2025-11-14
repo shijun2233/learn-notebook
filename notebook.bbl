@@ -51,6 +51,11 @@ A.~Nass, M.~Stancari, E.~Steffens, Donald~G. Crabb, Yelena Prok, Matt Poelker, S
 \newblock Studies on beam formation in an atomic beam source.
 \newblock In {\em {AIP} Conference Proceedings}, pages 863--867. {AIP}.
 
+\bibitem{osborne_initial_2024}
+N~Osborne, K~Verhaegh, M~D Bowden, T~Wijkamp, N~Lonigro, P~Ryan, E~Pawelec, B~Lipschultz, V~Soukhanovskii, T~Van Den~Biggelaar, and {the MAST-U Team}.
+\newblock Initial fulcher band observations from high resolution spectroscopy in the {MAST}-u divertor.
+\newblock 66(2):025008.
+
 \bibitem{rakitzis_highly_2005}
 T.~Peter Rakitzis.
 \newblock Highly spin-polarized atoms and molecules from rotationally state-selected molecules.
@@ -66,10 +71,9 @@ Nikolay~V. Vitanov, Andon~A. Rangelov, Bruce~W. Shore, and Klaas Bergmann.
 \newblock Stimulated raman adiabatic passage in physics, chemistry, and beyond.
 \newblock 89(1):015006.
 
-\bibitem{Zhu2009Spectroscopy}
-朱悉铭.
-\newblock {\em 低温等离子体的发射光谱诊断与碰撞辐射模型研究}.
-\newblock PhD thesis, 清华大学工程物理系, 北京, December 2009.
-\newblock 博士学位论文.
+\bibitem{wunderlich_evaluation_2016}
+Dirk Wünderlich and Ursel Fantz.
+\newblock Evaluation of state-resolved reaction probabilities and their application in population models for he, h, and h2.
+\newblock 4(4):26.
 
 \end{thebibliography}
