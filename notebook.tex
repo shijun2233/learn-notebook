@@ -80,10 +80,49 @@
 \quad\quad Simulation & $1590 \pm 33^{+6}_{-17}$ & $44.0 \pm 4.3^{+0}_{-3}$ \\
 \hline
 \end{tabular}
-\end{table}
+\end{table} 
 在层流-分子流过渡区，DSMC可准确预测束流速度，但横向温度对碰撞模型参数敏感，需进一步优化。因此，DSMC可用于设计和优化原子束源。
 
 
+\subsection{Spectroscopy - a powerful diagnostic tool in source development\cite{fantz_spectroscopypowerful_2006}}
+
+本文对射频负氢离子源的光谱特性进行了研究，讨论了等离子体参数与负离子电流密度的相关性，使用beam emission spectroscopy计算了引出系统的损耗，比较详细的介绍了等温等离子体中的光谱方法。这里主要介绍光谱测量相关的原理。
+
+\paragraph{谱线强度与等离子体参数的关系}
+首先，线强度可以提供电子激发态的数密度(population density)信息。可以用Collisional-Radiative (CR)模型计算激发态的数密度。激发态的数密度$n(p)$可以从绝对校准的发射线中得到：
+\begin{equation}
+    \epsilon_{pk} = n(p)A_{pk}
+    \label{eq:spectrum_line_intensity_equation_with_collisional_radiative_model}
+\end{equation}
+其中，$A_{pk}$是p能级到k能级的跃迁概率。数密度$n(p)$依赖于等离子体参数，例如电子温度$T_e$、电子密度$n_e$和耦合系数coupling coefficients$R(p)$:
+\begin{equation}
+    n(p) = n_0 n_e R_0(p) + n_i n_e R_i(p)
+    \label{eq:population_density_equation_with_collisional_radiative_model}
+\end{equation}
+其中，$R_0(p)$和$R_i(p)$描述数密度与基态或离子态之间的耦合。大多数情况下，复合可以被忽略，因此在方程\ref{eq:population_density_equation_with_collisional_radiative_model}中，$R_i(p)$可以忽略。方程\ref{eq:spectrum_line_intensity_equation_with_collisional_radiative_model}和\ref{eq:population_density_equation_with_collisional_radiative_model}可以结合起来，得到测得的谱线与碰撞辐射模型的关系：
+\begin{equation}
+    \epsilon_{pk} = n_0 n_e X_{pk}^{eff}(T_e, n_e, ...)
+    \label{eq:spectrum_line_intensity_equation_with_collisional_radiative_model_and_plasma_parameters}
+\end{equation}
+其中，$X_{pk}^{eff}(T_e, n_e, ...) = R_0(p) A_{pk}$是有效发射系数(effective emission coefficient)，它依赖于等离子体参数。因此，线辐射基本取决于$n_e$、$T_e$和离子密度。接着是电子密度与电子温度之间的关系。
+
+\paragraph{电子温度与电子密度的关系}
+电子密度（$n_e$）测定：选用单电离氩气 480 nm 与 488 nm 谱线比值，该比值在 $n_e=5\times10^{16}–5\times10^{18}\ \text{m}^{-3}$ 范围对 $n_e$ 敏感（变化一个数量级），且在 $T_e=2–10\ \text{eV}$ 时对 $T_e$ 依赖极弱可忽略，适配负离子源参数范围，放电中添加约 $15\%$ 氩气即可观测谱线。
+
+电子温度（$T_e$）测定：优先采用单一气体的绝对谱线发射分析，结合已知的氩气混合比例和上述方法测得的 $n_e$，选用中性氩气 750 nm 谱线——其主要激发路径为基态激发，激发速率系数已知且对 $T_e$ 依赖显著，灵敏度高。
+
+\paragraph{氢原子氢分子相关测量}
+强流极化H/D离子源解离器的诊断关键是氢分子与氢原子之间的比率，也就是在解离器中的解离率。因此本段主要描述氢分子与氢原子有关的测量方法。
+
+氢分子的振动分布通过Fulcher跃迁形成的振动带来分析。这种跃迁对及台下的五个振动能级是敏感的，因此可以用振动分布来推断振动温度。气体温度也可以从氢分子发射线中来推断。不同的是，气体温度主要来源是重粒子的碰撞，而振动温度主要来源是电子与重粒子之间的碰撞，因此，气体温度与振动温度之间存在差异。
+
+可以将少量的氮气混入到源中，来测量低压等离子体中的气体温度。通过对$\ce{N2}$或者$\ce{N2+}$的发射光谱进行测量，可以得到转动温度，而转动温度与气体温度之间是有关联的，因此可以从转动温度得到相对应气体温度。
+
+对于氢原子密度，可以使用巴尔默发射线，巴尔默发射线是与氢原子密度有关联的。而氢分子密度是与分子辐射线(Fulcher transition)有关联的。通过碰撞辐射模型的预测，$\text{H}_{\gamma}$与Fulcher带之间的比值与电子温度$T_e$没有关系，与电子密度的关系很微弱，因此可以通过测量谱线比$\text{H}_{\gamma} / \text{Fulcher}$来确定氢原子与氢分子的比例$\ce{H}/\ce{H2}$。在负氢源中测量了相关的比例，发现，氘的解离率更高。
+
+
+
+\subsection{低温等离子体的发射光谱诊断与碰撞辐射模型研究\cite{Zhu2009Spectroscopy}}
 
 
 

@@ -20,6 +20,11 @@ Ralf Engels, Kirill Grigoryev, Yury Valdau, and Ralf Gebel.
 \newblock Polarized h$_{\textrm{2}}$ , d$_{\textrm{2}}$ and {HD} molecules and their possible use to feed a polarized {\textbackslash}({\textbackslash}text\{H\}\_\{2\}{\textasciicircum}\{ + \}{\textbackslash}), {\textbackslash}({\textbackslash}text\{D\}\_\{2\}{\textasciicircum}\{ + \}{\textbackslash}) or {HD}$^{\textrm{+}}$ ion source for stripping injection into storage rings.
 \newblock In {\em Proceedings of the 24th International Spin Symposium ({SPIN}2021)}. Journal of the Physical Society of Japan.
 
+\bibitem{fantz_spectroscopypowerful_2006}
+U~Fantz, H~Falter, P~Franzen, D~Wünderlich, M~Berger, A~Lorenz, W~Kraus, P~{McNeely}, R~Riedl, and E~Speth.
+\newblock Spectroscopy—a powerful diagnostic tool in source development.
+\newblock 46(6):S297--S306.
+
 \bibitem{gentile_optically_2017}
 T. R. Gentile, P. J. Nacher, B.~Saam, and T. G. Walker.
 \newblock Optically polarized he 3.
@@ -60,5 +65,11 @@ M.~Tanaka, N.~Shimakura, and Yu.A. Plis.
 Nikolay~V. Vitanov, Andon~A. Rangelov, Bruce~W. Shore, and Klaas Bergmann.
 \newblock Stimulated raman adiabatic passage in physics, chemistry, and beyond.
 \newblock 89(1):015006.
+
+\bibitem{Zhu2009Spectroscopy}
+朱悉铭.
+\newblock {\em 低温等离子体的发射光谱诊断与碰撞辐射模型研究}.
+\newblock PhD thesis, 清华大学工程物理系, 北京, December 2009.
+\newblock 博士学位论文.
 
 \end{thebibliography}
