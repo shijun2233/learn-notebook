@@ -120,19 +120,65 @@
 
 对于氢原子密度，可以使用巴尔默发射线，巴尔默发射线是与氢原子密度有关联的。而氢分子密度是与分子辐射线(Fulcher transition)有关联的。通过碰撞辐射模型的预测，$\text{H}_{\gamma}$与Fulcher带之间的比值与电子温度$T_e$没有关系，与电子密度的关系很微弱，因此可以通过测量谱线比$\text{H}_{\gamma} / \text{Fulcher}$来确定氢原子与氢分子的比例$\ce{H}/\ce{H2}$。在负氢源中测量了相关的比例，发现，氘的解离率更高。
 
+\subsection{STUDY OF THE VELOCITY DISTRIBUTION IN AN INTENSE PULSED HYDROGEN BEAM\cite{belov_study_1985}}
+这篇文章在位于Moscow Institute for Nuclear Research的polarized proton sources (PPS)\ref{fig:belov_study_1985_experimental_set}使用TOF质量谱仪测量了解离器获得的超音速原子喷流的速度分布，并且研究是射频放电频率、气体消耗和原子冷却对原子束速度分布与束流强度的影响。其实验装置类似与SPIS原子束源部分。为了测量速度分布，使用一个机械切割器将束流切割成比较短的部分。被分割的部分使用一个电离规(ionization gauge)进行测量，其信号被电流放大器放大并储存在示波器中。需要使用TOF测量束流密度时斩波器被移出束流的位置。发光二极管的信号用来做触发信号。
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.6\textwidth]{figures/Scheme_of_the_experimental_set_in_MINR.png}
+    \caption{Scheme of the experimental set}
+    \label{fig:belov_study_1985_experimental_set}
+\end{figure}
+
+实验对比了三种不同的解离器解离管，管道使用耐热玻璃(pyrex glass)制造，安装之前使用氢氟酸和水处理以减少原子的表面复合。通过解离器管道之后，束流会被不锈钢制作的skimmer进行过滤成型。skimmer是以一个空心锥，入口直径为4mm，内外角为45°和50°。再skimmer之后是一个准直器。
+
+三种不同的解离管会产生三种不同温度的束流，我们称之为hot、warm和cooled beams。hot beam是直接从解离器出来的束流，使用2a的管道，没有经过冷却。warm beam使用2b所示的管道，器管道壁被冷却到300k。cooled beam通过液氮冷却，温度大约为80K，使用2c管道。如图所示:
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.6\textwidth]{figures/Three_types_of_dissociator_tubes.png}
+    \caption{Scaled drawing of the dissociator tube and of the system forming the atomic beam.}
+    \label{fig:three_types_of_dissociator_tubes}
+\end{figure}
+
+射频功率通过一个线圈感性耦合射频放电。当射频放电与氢气注入同时开启时可以观察到最强的原子束密度。氢气是通过快速电磁阀注入的，一般压力为2atm，通过改变电磁阀控制电源的脉冲高度可以获得不同进气量。每个脉冲的气体消耗可以通过以下公式计算：
+\begin{equation}
+    N = \Delta n_1 V_1 \frac{1- \tau_1/\tau_2 }{\exp(-\Delta t_m/\tau_2) - \exp(-\Delta t_m/\tau_1)}
+    \label{eq:gas_consumption_equation_per_pulse}
+\end{equation}
+其中，$\Delta t_m$是气体注入管内到解离器压力最大时刻的时间间隔，$\Delta n_1$是在$\Delta t_m$时间间隔内解离器内气体密度的变化，，$\tau_1$是气体从解离器管道逃逸的特征时间，$\tau_2$是泵从解离器腔室内抽出氢的特征时间，$V_1$是包含解离器的腔室体积。 
+
+
+
+
+
+
+
 
 \subsection{Initial Fulcher band observations from high resolution spectroscopy in the MAST-U divertor\cite{osborne_initial_2024}}
+
+
 
 
 \subsection{Evaluation of State-Resolved Reaction Probabilities and Their Application in Population Models for$\ce{He}$, $\ce{H}$, and $\ce{H2}$\cite{wunderlich_evaluation_2016}}
 
 
 
+\subsection{Spectroscopic determination of$\ce{H}$, $\ce{He}$, and $\ce{H2}$ temperatures in a large-scale microwave plasma source\cite{tatarova_spectroscopic_2007}}
+
+高斯线的半高全款与气体温度之间的关系可以用以下表达式来描述：
+\begin{equation}
+    \Delta \lambda_{D} = 7.16 \times 10^{-7} \lambda \sqrt{\frac{T}{M}}
+    \label{eq:gaussian_half_width_temperature_equation}
+\end{equation}
+其中，$\lambda$是中心波长，$T$是气体温度，$M$是原子质量。
+下边给出推导过程：
 
 
 
 
-\subsection{低温等离子体的发射光谱诊断与碰撞辐射模型研究\cite{Zhu2009Spectroscopy}}
+
+
+
+\subsection{低温等离子体的发射光谱诊断与碰撞辐射模型研究\cite{__2009}}
 
 
 

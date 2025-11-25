@@ -5,6 +5,11 @@ Nate C.~M. Bartlett, Daniel~J. Miller, Richard~N. Zare, Dimitris Sofikitis, T.~P
 \newblock Preparation of oriented and aligned h2 and {HD} by stimulated raman pumping.
 \newblock 129(8):084312.
 
+\bibitem{belov_study_1985}
+A.S. Belov, S.A. Kubalov, V.E. Kuzik, and V.P. Yakushev.
+\newblock Study of the velocity distribution in an intense pulsed hydrogen beam.
+\newblock 239(3):443--454.
+
 \bibitem{engels_production_2015}
 R.~Engels, M.~Gaißer, R.~Gorski, K.~Grigoryev, M.~Mikirtychyants, A.~Nass, F.~Rathmann, H.~Seyfarth, H.~Ströher, P.~Weiss, L.~Kochenda, P.~Kravtsov, V.~Trofimov, N.~Tschernov, A.~Vasilyev, M.~Vznuzdaev, and H.~Paetz~Gen. Schieck.
 \newblock Production of hyperpolarized h 2 molecules from h → atoms in gas-storage cells.
@@ -66,6 +71,11 @@ M.~Tanaka, N.~Shimakura, and Yu.A. Plis.
 \newblock Production of polarized ion by {ECR} ionizer.
 \newblock 524(1):46--59.
 
+\bibitem{tatarova_spectroscopic_2007}
+E.~Tatarova, F.~M. Dias, C.~M. Ferreira, and N.~Puač.
+\newblock Spectroscopic determination of h, he, and h2 temperatures in a large-scale microwave plasma source.
+\newblock 101(6):063306.
+
 \bibitem{vitanov_stimulated_2017}
 Nikolay~V. Vitanov, Andon~A. Rangelov, Bruce~W. Shore, and Klaas Bergmann.
 \newblock Stimulated raman adiabatic passage in physics, chemistry, and beyond.
@@ -75,5 +85,9 @@ Nikolay~V. Vitanov, Andon~A. Rangelov, Bruce~W. Shore, and Klaas Bergmann.
 Dirk Wünderlich and Ursel Fantz.
 \newblock Evaluation of state-resolved reaction probabilities and their application in population models for he, h, and h2.
 \newblock 4(4):26.
+
+\bibitem{__2009}
+{朱悉铭}.
+\newblock 低温等离子体的发射光谱诊断与碰撞辐射模型研究.
 
 \end{thebibliography}
