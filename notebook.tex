@@ -146,6 +146,27 @@
 \end{equation}
 其中，$\Delta t_m$是气体注入管内到解离器压力最大时刻的时间间隔，$\Delta n_1$是在$\Delta t_m$时间间隔内解离器内气体密度的变化，，$\tau_1$是气体从解离器管道逃逸的特征时间，$\tau_2$是泵从解离器腔室内抽出氢的特征时间，$V_1$是包含解离器的腔室体积。 
 
+在$N = 1 \times 10^{18}$，在TOF的离子收集极测的了典型的示波器信号如图\ref{fig:typical_oscilloscope_signal_in_MINR}所示：
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.4\textwidth]{figures/Typical_oscilloscope_signal_in_MINR.png}
+    \caption{Characteristic oscillogram of the mass spectrometer pulses; RF discharge turned on; $N = 1 \times 10^{18}$ molecules per pulse; $P_{\text{rf}} = 3.6\,\text{kW}$, $T_{\text{ch}} = 300\,\text{K}$. From left to right: electron beam current pulse (0.2\,mA/div), accelerating voltage pulse, and ion current pulses of the atomic and molecular hydrogen (50\,mV/div). Horizontal scale: 0.5\,$\mu$s/div.}
+    \label{fig:typical_oscilloscope_signal_in_MINR}
+\end{figure}
+
+我们可以通过记录离子脉冲电流来确定分子束密度，可以推导出第k种粒子的密度$n_k$为式\ref{eq:molecular_density_equation}：
+\begin{equation}
+    N_k = Q_k/ C I_e t_{acc} \bar{L}_i \sigma_{i k}
+    \label{eq:molecular_density_equation}
+\end{equation}
+其中，$Q_k$是加速电压脉冲时间在电离区放出的第k中离子的电荷量，$C$是气体的密度，$I_e$是电子束电流，$t_{acc}$是离子在电离区积累的时间与电子束脉冲持续时间相等，$\bar{L}_i$是电子与分子束在电子束轴向交叉区域的平均长度，$\sigma_{i k}$是第k种离子在能量为250eV的电子的电离截面，C is a coefficient accounting for the transparency of the mass spectrometer grids.离子电荷量$Q_k$可以用以下公式\ref{eq:ion_charge_equation}计算：
+\begin{equation}
+    Q_k = \frac{1}{R_F}\int_{ + \infty}^{ - \infty} u_{out}^{k} \mathrm{d}t
+    \label{eq:ion_charge_equation}
+\end{equation}
+$R_F$是电流放大器的反馈电阻，$u_{out}^{k}$是电流放大器输出的第k种离子的脉冲电压。
+
+\paragraph{利用time-of-flight method测量速度分布} 使用一个斩波器，斩波器的参数为至今13cm转速24000 r.p.m，设置有两个宽度为3 mm的狭缝。飞行时间信号由放置在盘下游79.5cm处的电离计测得。
 
 
 
@@ -179,6 +200,43 @@
 
 
 \subsection{低温等离子体的发射光谱诊断与碰撞辐射模型研究\cite{__2009}}
+
+
+
+
+
+\subsection{Precision lamb-shift polarimeter for polarized atomic and ion beams\cite{engels_precision_2003}}
+
+首先考虑不同的修正:
+\paragraph{Spin-Filter修正}
+在测量非极化束流时，由于磁场在53.5mT和60.5mT的不均匀性有席位的差别，因此即使是非极化 的束流，也可能测得不同高度的峰值。因此会有两个不同的传输效率$t_{\alpha^{+}}$和$t_{\alpha^{-}}$。在自旋滤波器前方，由于铯炉导致的极化度变化为：
+\begin{equation}
+    W_{\alpha^{+}} = \frac{1+P_{Meta}}{2} , W_{\alpha^{-}} = \frac{1-P_{Meta}}{2}
+\end{equation}
+考虑到$t_{\alpha^{+}} \not= t_{\alpha^{-}}$，可以得到极化度为：
+\begin{equation}
+    P_{Ly} = \frac{t_{\alpha^{+}}W_{\alpha^{+}} - t_{\alpha^{-}}W_{\alpha^{-}}}{t_{\alpha^{+}}W_{\alpha^{+}} + t_{\alpha^{-}}W_{\alpha^{-}}}
+\end{equation}  
+定义传输效率比$T = t_{\alpha^{+}}/t_{\alpha^{-}}$，可以得到：
+\begin{equation}
+    P_{Ly} = \frac{TW_{\alpha^{+}} -W_{\alpha^{-}}}{ TW_{\alpha^{+}} + W_{\alpha^{-}}} = \frac{P_{Meta}(T+1)+(T-1)}{P_{Meta}(T-1)+(T+1)}
+\end{equation}
+进一步可以得到:
+\begin{equation}
+    P_{Meta} = \frac{P_{Ly}(1+T) + (1 - T)}{P_{Ly}(1-T) + (T+1)}
+    \label{eq:spin_filter_equation}
+\end{equation}
+因此，修正系数$C_{SF}$是$T$和测得的极化度$P_{Ly}$之间的函数:
+\begin{equation}
+    C_{SF} = \frac{(T+1) + \frac{1}{P_{Ly}}(1 - T)}{P_{Ly}(1- T) + (1 + T)}
+    \label{eq:spin_filter_coefficient_equation}
+\end{equation}
+传输效率比$T = t_{\alpha^{+}}/t_{\alpha^{-}}$可以利用未极化束流$P_{Meta} = 0$ 来计算:
+\begin{equation}
+    T = \frac{1 + P_{Ly}}{1 - P_{Ly}}
+    \label{eq:transmission_efficiency_ratio_equation}
+\end{equation}
+
 
 
 
@@ -501,6 +559,10 @@ $|HD6\rangle$ \\
 
 
 
+\subsection{A Universal Method to Generate Hyperpolarisation in Beams and Samples\cite{engels_universal_2023}}
+
+
+
 
 
 
@@ -596,7 +658,7 @@ $|HD6\rangle$ \\
 \end{equation}
 假设离子的限制时间为1 ms，在14.5GHz，500W运行功率下，进动角$\Theta$大约为 2.7 rad。ESR跃迁会产生$\mathbf{1} \leftrightarrow \mathbf{3}$和$\mathbf{2} \leftrightarrow \mathbf{4}$的跃迁，这两种跃迁会引起退极化，可以由以下公式表示：
 \begin{equation}
-    P =\frac{\abs{x}}{\sqrt{1+x^2}} 
+    P =\frac{\abs{x}}{\sqrt{1+x^2}}
     \label{eq:depolarization_due_to_ESR_transitions}
 \end{equation}
 
