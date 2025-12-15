@@ -591,6 +591,24 @@ $|HD6\rangle$ \\
 \end{eqnarray}
 
 
+\subsection{Enhancement of the Raman Effect by Infrared Pumping\cite{shishkov_enhancement_2019}}
+
+\subsection{Can stimulated Raman pumping cause large population transfers in isolated molecules\cite{mukherjee_can_2011}}
+首先来解释什么是Isolated Molecules，这是一个比较令人迷惑的问题，网上并没有给出其的直接定义，中文意义"孤立分子"也没有相应的文献。但是好在，文中说了一个supersonic molecular beam expansion（超音速膨胀分子流）是一种Isolated Molecules Stream的例子。并且相关资料表明真空下的气体分子是复合Isolated Molecules定义的。因此我们继续来看文章的具体问题。
+
+Stimulated Raman pumping(SRR)是一种制备激发振动能级分子的技术。简单来说,一束频率为$\omega_P$的泵浦激光脉冲和一束频率为$\omega_S$的斯罗克斯激光可以调整为满足谐振条件
+\begin{equation}
+    \hbar (\omega_P - \omega_S) = E_1 - E_0
+    \label{eq:resonance_condition_in_SRR}
+\end{equation}
+其中，$E_1$和$E_0$为两个能级的能量。用两束脉冲对分子进行照射，分子可以从0能级转移到1能级。普遍认为在高压下，碰撞速率和泵浦速率是相当的，甚至大于泵浦效率，因此SRP在达到饱和时的速率大约为50\%。因此，猜想对于Isolated Molecules也可以达到同样的效率。然而实验显示对于Isolated Molecules，SRP的性能较差，提高功率并没有改善相关效率。使用强纳秒激光脉冲对Isolated Molecules进行SRP,在dephasing的情况下，转移到振动激发能级的过程会受到Coherent Population return(CPR)的严重影响。当共振条件未满足时，CPR发生在脉冲激发期间。共振条件通过一个失谐量($\delta$)来定义(原文就是这样写的):
+\begin{equation}
+    \delta = (\omega_P - \omega_S) - (E_1 - E_0)/\hbar < \frac{1}{\tau}
+    \label{eq:resonance_condition_in_CPR}
+\end{equation}
+其中,$\tau$脉冲持续时间或光与分子相互作用的时间尺度。也就是说激光的频率差和能级差之间的差值不能太大，激光脉冲的时间不能太短。
+
+SRP使用的激光有强度一般为数十GW/cm$^2$，振动能级的Stark位移大约为Ghz量级。在相干激发条件下，Isolated Molecules的受激吸收光谱不受功率和Stark展宽的影响。使用Feynman，Hwllwarth和Vernon的Bloch矢量模型来描述CPR如何使得能级转移在被纳秒激光绝热激发时对激光功率和频率失谐如此敏感。
 
 
 \newpage
