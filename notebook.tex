@@ -608,7 +608,26 @@ Stimulated Raman pumping(SRR)是一种制备激发振动能级分子的技术。
 \end{equation}
 其中,$\tau$脉冲持续时间或光与分子相互作用的时间尺度。也就是说激光的频率差和能级差之间的差值不能太大，激光脉冲的时间不能太短。
 
-SRP使用的激光有强度一般为数十GW/cm$^2$，振动能级的Stark位移大约为Ghz量级。在相干激发条件下，Isolated Molecules的受激吸收光谱不受功率和Stark展宽的影响。使用Feynman，Hwllwarth和Vernon的Bloch矢量模型来描述CPR如何使得能级转移在被纳秒激光绝热激发时对激光功率和频率失谐如此敏感。
+SRP使用的激光有强度一般为数十GW/cm$^2$，振动能级的Stark位移大约为Ghz量级。在相干激发条件下，Isolated Molecules的受激吸收光谱不受功率和Stark展宽的影响。使用Feynman，Hwllwarth和Vernon的Bloch矢量模型来描述CPR如何使得能级转移在被纳秒激光绝热激发时对激光功率和频率失谐极其敏感。用数值分析的方法分析氢分子的以下跃迁:从$\ce{H2}(v=0,J=0,M=0)$到$\ce{H2}(v=1,j=2,M=0)$。用两个商业激光器，一个是$\ce{Nd}:^{+3}\ce{YAG}$二次谐波绿色激光器，波长 532 nm，另一个是波长699你们的染料激光器(dye laser)。能量范围为10- 100mJ来计算振动激发。从描述SRP的密度矩阵方程来构建Bloch-Feynman矢量模型。矢量模型可以提供绝热过程和coherent population return直观的图像,并且考虑Stark位移。最后，文中讨论了借助斯塔克诱导绝热拉曼通道(Stark-induced adiabatic Raman passage )，绕过coherent population return的方法，将处于振动基态的粒子全部布居转移至目标振动激发态；该技术需采用强度适配、脉冲轮廓部分重叠的泵浦光与斯托克斯光来实现。并且假设没有多普勒激发。(对于准直的分子束，这是一个合理的假设，考虑到我们的实际情况，这个假设应当是有用的)。
+
+\paragraph{描述SRP的Bloch-Fynman矢量模型} 
+在缺乏与泵浦激光和斯托克斯激光频率接近的中间能级情况下，SRP过程可以用涉及两个振动能级的密度矩阵来描述:
+\begin{equation}
+    \frac{\mathrm{d} \sigma_{01}}{\mathrm{d} t}  + i\delta_2 \sigma_{01}  = i2rw
+    \label{eq:bloch_fynman_vector_model_for_SRP}
+\end{equation}
+\begin{equation}
+    \frac{\mathrm{d} w}{\mathrm{d} t}   = -2 \Im{r*\sigma_{01}}
+    \label{eq:bloch_fynman_vector_model_for_SRP}
+\end{equation}
+其中，$\sigma_{01}$是双光子旋转系统的$2 \times 2$密度矩阵非对角元缓慢变换的振幅(什么玩意，原文:Here, $\sigma_{01}$ is the slowly varying amplitude of the off-diagonal element of the $2 \times 2$ density matrix $\rho$ representing the two-photon resonant rovibrational system.)
+
+
+
+
+
+
+
 
 
 \newpage
