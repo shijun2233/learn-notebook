@@ -68,6 +68,7 @@
 \def\eqprefix{eq:}
 \def\figprefix{fig:}
 % --- 颜色配置结束 ---
+% Duplicate/misplaced definition of \@stsubsection removed (proper definition is provided after \begin{document} inside a \makeatletter...\makeatother block).
 
 \numberwithin{equation}{subsection} % number equations within subsections
 \numberwithin{figure}{subsection} % number figures within subsections
@@ -270,6 +271,26 @@ $R_F$是电流放大器的反馈电阻，$u_{out}^{k}$是电流放大器输出�
 
 
 \subsection{On determination of the degree of dissociation of hydrogen in non-equilibrium plasmas by means of emission spectroscopy: I. The collision-radiative model and numerical experiments\cite{lavrov_determination_2006}}
+本文提出了一种新的测量氢解离度的光谱方法,该方法使用巴尔默线中$\text{H}_{\alpha}$和$\text{H}_{\beta}$以及Fulcher-$\alpha$线中的$(2-2)\text{Q1}$分子线的相对强度来测量解离率。首先我们来定义解离率，解离率定义为被解离的分子的数量与在各种状态下分子密度的比值，这里各种状态指的是基态，激发态，解离的分子与被电离状态的分子，也就是所有这个分子有关的状态，根据这个定义我们可以写出解离率：
+\begin{equation}
+    D = \frac{[\ce{H}]}{[\ce{H}] + 2[\ce{H2}]} = \frac{[\ce{H}]/[\ce{H2}]}{[\ce{H}]/[\ce{H2}] + 2}
+\end{equation}
+其中，$[\ce{H}]$是氢原子在基态$1^2\ce{S1/2}$，$[\ce{H2}]$是氢分子在处在$X^1 \Sigma^{+}_{g}$电子基态上，对所有振动转动能级进行求和得到的数目。在热力学平衡的状态下，解离度是温度和压力的已知函数没在非平衡的条件下，要计算出解离度是很困难的，低温等离子体就是典型的非平衡条件下的等离子体。造成困难的原因是需要在一个理论框架内考虑很多过程，例如解离碰撞扩散复合激发等等，在过去的20年间（本文发表于2006）已经发展测量氢等离子体于低温等离子体密度的方法，这些方法各有优缺点。使用化学和calorimetric的方法是非局域和间接的方法。而在真空紫外范围内测量$\text{Lyman}-\alpha$线，需要特殊的光谱技术，对于大多数气体放电是比较困难的，而一些激光方法比如激光诱导荧光，共振增强多光子电离和相干反斯托克斯拉曼散射需要昂贵的设备，并且存在标定问题。对于基于相对线强度的测量方法，如果等离子体是光学薄的，那么强度比不依赖于等离子体的大小，并且不需要对系统进行表i的那个，并且不需要测量EEDF即，电子能量分布函数。另一种方法是actinometry，也就是感光法，将稀有气体掺入含氢的等离子体中，测量巴尔默线于中性原子线的强度比可以得到解离率。这篇文章考虑非平衡等离子体中非精细结构光谱测量解离率的方法。
+\paragraph{Excitation deactivation model and rate coefficients} 首先来考虑巴尔默线的模型。主要有两个过程可以影响氢原子布局数,分别是:
+\begin{enumerate}
+    \item[i] 电子激发基态原子:
+    \begin{equation}
+        \ce{H}(1^{2}\ce{S1/2}) + \ce{e-} \rightarrow \ce{H}^*(n,l,j) + \ce{e-}
+        \label{electron_excitation_hydrogen}
+    \end{equation}
+    \item[ii] 解离电子碰撞激发:
+    \begin{equation}
+        \ce{H2}(X^1\Sigma^+_g,v,N) + \ce{e-} \rightarrow \ce{H}^*(n,l,j) +   \ce{H}(1^{2}\ce{S1/2}) + \ce{e-}
+        \label{dissociation_excitation_hydrogen}
+    \end{equation}
+\end{enumerate}
+
+
 
 
 
