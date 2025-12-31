@@ -21,6 +21,54 @@
 \usepackage{ctex}
 \usepackage{mhchem} % 化学式宏包
 \usepackage{booktabs} % for professional-looking tables
+
+% --- 颜色配置开始 ---
+% 使用 xcolor 包以获得更多颜色选项
+\usepackage[dvipsnames]{xcolor} 
+
+% 定义不同引用类型的颜色
+\definecolor{refcolor}{rgb}{0.2, 0.2, 0.8} % 深蓝色，用于目录和普通链接
+\definecolor{figcolor}{rgb}{0, 0, 1}     % 蓝色，用于图片引用
+\definecolor{eqcolor}{rgb}{1, 0, 0}      % 红色，用于公式引用
+\definecolor{citecolor}{rgb}{0, 0.5, 0}  % 绿色，用于参考文献引用
+
+% 将 hyperref 移动到此处，并立即进行设置
+\usepackage{hyperref} % 允许我们包含超链接
+\hypersetup{
+    colorlinks=true,   % 开启链接颜色，去除边框
+    linkcolor=refcolor,  % 目录和默认内部链接颜色
+    citecolor=citecolor, % 参考文献链接颜色
+    urlcolor=cyan       % URL链接颜色
+}
+
+% 重新定义 \ref 命令以根据标签前缀应用不同颜色
+\let\originalref\ref
+\renewcommand{\ref}[1]{%
+  \begingroup%
+  % 检查标签的前缀并设置颜色
+  \if\relax\detokenize{#1}\relax\else
+    \expandafter\expandafter\expandafter\mycheckprefix\expandafter\string\csname r@#1\endcsname\relax{#1}%
+  \fi
+  \endgroup%
+}
+
+% 辅助宏，用于检查标签前缀
+\def\mycheckprefix#1#2#3\relax#4{%
+  \def\myprefix{#1#2#3}%
+  \ifx\myprefix\eqprefix
+    \textcolor{eqcolor}{\originalref{#4}}%
+  \else
+    \ifx\myprefix\figprefix
+      \textcolor{figcolor}{\originalref{#4}}%
+    \else
+      \originalref{#4}%
+    \fi
+  \fi
+}
+\def\eqprefix{eq:}
+\def\figprefix{fig:}
+% --- 颜色配置结束 ---
+
 \numberwithin{equation}{subsection} % number equations within subsections
 \numberwithin{figure}{subsection} % number figures within subsections
 \numberwithin{table}{subsection} % number tables within subsections
@@ -45,7 +93,7 @@
 \author{刘世珺}
 \date{\today}
 \maketitle
-\hypersetup{hidelinks}
+% 从这里移除 hypersetup
 \tableofcontents
 
 
@@ -246,11 +294,34 @@ $R_F$是电流放大器的反馈电阻，$u_{out}^{k}$是电流放大器输出�
 
 
 
+\subsection{Constant current pulsed power supply  for long pulse arc discharge positive  hydrogen ion source\cite{motwani_constant_2023}}
+这篇论文介绍了一种用于弧放电离子源的可变脉宽基于Buck变换器的恒流脉冲电源 (buck converter-based constant current pulsed power supply, CCPPS)。弧电源的工作参数是50 A、550V、脉冲宽度2ms和重复频率2Hz。采用三电极引出结构引出氢离子，在50keV的能量下可以得到80mA的氢离子束流。
 
-
-
-
-
+接着来详细介绍该电源与弧放电等离子体源的具情况。在CCPPS中使用SiC MOSFETs和二极管可以最大限度的降低开关损害并且实现250kHz的开关频率。采用闭环脉冲宽度调制控制器 ( closed loop pulse width modulation, PWM) 来实现电源的恒流模式。并且在已有的负氢离子源上加入三电极结构，加入一个电子抑制电极用于抑制负离子，替代引出电极来引出正离子。采用10kV直流稳压电压以2mA的恒定电流工作，产生等密度连续的氢等离子体。CCPPS用于在50A、550V的工作状态下产生高密度的脉冲等离子体，脉宽2ms，重复频率2Hz，在50kV的能量下可以达到80mA的流强。
+\paragraph{电路功率元件} CCPPS采用Buck变化拓扑结构，其结构简单，只包含电感、电容、二极管和控制开关组件。电源的原理图如图\ref{fig:schematic_of_CCPPS}所示:
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.8\textwidth]{figures/schematic_of_CCPPS.jpeg}
+    \caption{(a)CCPPS功率电路，(b)CCPPS控制电路。}
+    \label{fig:schematic_of_CCPPS}
+\end{figure}
+其中SiC MOSFETs和二极管用于高速开关电源。SiC MOSFET的低导通电阻和高开关速率降低了器件的功耗。开关电源的体积在很大程度上是由无源电路决定的。LC滤波器由一个非线性电感L1组成，这种方法由很多优点，比如其体积较小，可以在低负载电流下使用连续电流模式，小负载下也由低的的输出电流纹波，这种配置下，在小电流下也有大电感，可以提高脉冲的上升时间。弧放电等离子体是一个非线性的负载，为了有效处理非线性特征，需要对电源进行闭环控制，采用固定开关频率的脉宽调制来控制输出电流，CF1和CF2用来减少输出电压中的纹波。采用基于霍尔效应的电流传感器测量输出电流。随后将电流测量送入运算放大器和比较器，以提供反馈控制并提供过流保护。输出的脉冲宽度和脉冲重复频率由外部触发信号启用和控制。通过使用电位器改变参考信号，可以调节输出电流。
+\paragraph{电源测试}
+弧放电氢离子源的结构如图\ref{fig:schematic_of_arc_H_ion_source}所示,
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.8\textwidth]{figures/schematic_of_arc_H_ion_source.jpeg}
+    \caption{弧放电氢离子源结构：CCPPS: constant current pulsed power supply, FGND: floating ground, IGE: ignition electrode, ESE: electron suppression electrode, TMP: turbomolecular pump, PE: plasma electrode, GE: ground electrode, BFC: biased Faraday cup, FC: Faraday cup, BE: biasing electrode, CT-IB: current transformer positive hydrogen ion current, FC-IB: Faraday cup positive hydrogen ion current, IR: Faraday cup termination resistance, PM: permanent magnet, FEM: filter electromagnet, PC: plasma chamber (cold cathode), AE: arcing electrode (tungsten filament/element), VC: vacuum chamber, V1: ignition power supply, V2: acceleration power supply, V3: electron suppression biasing supply, and V4: Faraday cup biasing electrode power supply.}
+    \label{fig:schematic_of_arc_H_ion_source}
+\end{figure}
+使用流量控制器讲氢器注入氘等离子体室Plasma Chamber,PC中来控制压力，等离子体电极Plasma Electrode,PE，位于PC和真空室Vacuum Chamber,VC之间，这些腔体通过PE上直径8mm的孔来连接，使用分子泵在两个腔体之间进行建立气压差。在该正氢离子源中，通过连续辉光放电产生初始弱等离子体，负电源电压为10 k V，电流为2 m A。这种连续的弱等离子体用于维持脉冲电弧放电的2 ms和2 Hz脉冲重复频率。高密度等离子体由PC和五元素Arcing Electrode，AE之间CCPPS产生的脉冲电弧放电产生的。采用三电极引出结构从高密度等离子体中引出质子，其中PE是第一电极，其次是Electron Suppression Electrode ESE电子抑制电极，然后是Ground Electrode GE地电极。在等离子体电极与地电极之间施加50kV的电压，实现引出等离子体。在引出质子的过程中会有高能电子存在，使用滤波磁铁产生的二极场，可以偏转电子，磁铁的场强依靠电流来控制，利用偏置的法拉第杯来测量引出的质子。在控制气体流量为60 SCCM standard cubic centimeters per minute、引出电压为50kV时，绘制弧电流与引出质子电流的关系如图\ref{fig:arc_current_vs_extracted_H_ion_current}所示，
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.8\textwidth]{figures/arc_current_vs_extracted_H_ion_current.jpeg}
+    \caption{引出质子电流与弧电流关系。}
+    \label{fig:arc_current_vs_extracted_H_ion_current}
+\end{figure}
+CCPPS的弧电流范围从5A到60A，质子电流的峰值范围从19.4A到92A。当弧电流为50A时，引出质子电流峰值为80mA,能量为50 keV。
 
 
 
