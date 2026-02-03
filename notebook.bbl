@@ -10,6 +10,11 @@ A.S. Belov, S.A. Kubalov, V.E. Kuzik, and V.P. Yakushev.
 \newblock Study of the velocity distribution in an intense pulsed hydrogen beam.
 \newblock 239(3):443--454.
 
+\bibitem{compagnon_molecular_2001}
+I.~Compagnon, R.~Antoine, D.~Rayane, Ph. Dugourd, and M.~Broyer.
+\newblock Molecular beam deflection experiments on mixed clusters.
+\newblock 16(1):365--368.
+
 \bibitem{engels_universal_2023}
 R.~Engels, T.~El-Kordy, N.~Faatz, C.~Hanhart, N.~Hanold, C.~S. Kannis, L.~Kunkel, S.~Pütz, H.~Sharma, T.~Sefzick, H.~Soltner, V.~Verhoeven, M.~Westphal, J.~Wirtz, and M.~Büscher.
 \newblock A universal method to generate hyperpolarisation in beams and samples.
@@ -18,7 +23,6 @@ R.~Engels, T.~El-Kordy, N.~Faatz, C.~Hanhart, N.~Hanold, C.~S. Kannis, L.~Kunkel
 R.~Engels, R.~Emmerich, J.~Ley, G.~Tenckhoff, H.~Paetz Gen.~Schieck, M.~Mikirtytchiants, F.~Rathmann, H.~Seyfarth, and A.~Vassiliev.
 \newblock Precision lamb-shift polarimeter for polarized atomic and ion beams.
 \newblock 74(11):4607--4615.
-\newblock Publisher: {AIP} Publishing.
 
 \bibitem{engels_production_2015}
 R.~Engels, M.~Gaißer, R.~Gorski, K.~Grigoryev, M.~Mikirtychyants, A.~Nass, F.~Rathmann, H.~Seyfarth, H.~Ströher, P.~Weiss, L.~Kochenda, P.~Kravtsov, V.~Trofimov, N.~Tschernov, A.~Vasilyev, M.~Vznuzdaev, and H.~Paetz~Gen. Schieck.
@@ -39,27 +43,52 @@ Ralf Engels, Kirill Grigoryev, Yury Valdau, and Ralf Gebel.
 U~Fantz, H~Falter, P~Franzen, D~Wünderlich, M~Berger, A~Lorenz, W~Kraus, P~{McNeely}, R~Riedl, and E~Speth.
 \newblock Spectroscopy—a powerful diagnostic tool in source development.
 \newblock 46(6):S297--S306.
+\newblock {JCR分区}: Q1 中科院分区升级版: 物理与天体物理1区 影响因子: 4.0 5年影响因子: 3.8 {EI}: 是 南农高质量: B.
 
 \bibitem{gentile_optically_2017}
 T. R. Gentile, P. J. Nacher, B.~Saam, and T. G. Walker.
 \newblock Optically polarized he 3.
 \newblock 89(4):045004.
 
+\bibitem{herm_magnetic_1962}
+R~R Herm and D~R Herschbach.
+\newblock Magnetic analysis of atomic and molecular beams. i. construction and calibration of inhomogeneous deflecting magnets.
+
 \bibitem{kannis_spin_2025}
 C.~S. Kannis, R.~Engels, T.~El-Kordy, N.~Faatz, S.~J. Pütz, V.~Verhoeven, T.~P. Rakitzis, and M.~Büscher.
 \newblock Spin manipulation and nuclear polarization enhancement in particle beams with static magnetic fields.
 \newblock 112(1):012801.
-\newblock Publisher: American Physical Society.
+
+\bibitem{larionov_modeling_2025}
+V.~Larionov, A.~Vasilyev, K.~Ivshin, A.~Rozhdestvenskij, V.~Trofimov, A.~Solovev, and V.~Fimushkin.
+\newblock Modeling polarized atomic beam source ({PABS}).
+\newblock 22(5):1157--1160.
 
 \bibitem{lavrov_determination_2006}
 B~P Lavrov, A~V Pipa, and J~Röpcke.
 \newblock On determination of the degree of dissociation of hydrogen in non-equilibrium plasmas by means of emission spectroscopy: I. the collision-radiative model and numerical experiments.
 \newblock 15(1):135.
+\newblock {JCR分区}: Q1 中科院分区升级版: 物理与天体物理2区 影响因子: 3.3 5年影响因子: 3.4 {EI}: 是.
 
 \bibitem{leachman_fundamental_2009}
 J.~W. Leachman, R.~T Jacobsen, S.~G. Penoncello, and E.~W. Lemmon.
 \newblock Fundamental equations of state for parahydrogen, normal hydrogen, and orthohydrogen.
 \newblock 38(3):721--748.
+
+\bibitem{liang_strong_2020}
+Jiahao Liang, Thomas~M. Fuchs, Rolf Schäfer, and Vitaly~V. Kresin.
+\newblock Strong permanent magnet gradient deflector for stern-gerlach-type experiments on molecular beams.
+\newblock 91(5):053202.
+
+\bibitem{masschaele_design_2012}
+Bert Masschaele, Toon Roggen, Herbert De~Gersem, Ewald Jannsens, and Tung~Thang Nguyen.
+\newblock Design of a strong gradient magnet for the deflection of nanoclusters.
+\newblock 22(3):3700604--3700604.
+
+\bibitem{mccolm_considerations_1966}
+Douglas {McColm}.
+\newblock Considerations affecting design of atomic and molecular beam resonance apparatus employing two-pole state selectors.
+\newblock 37(9):1115--1123.
 
 \bibitem{motwani_constant_2023}
 Kapil Motwani, Dharmraj~V. Ghodke, Ajith Amban, Murali~Krishnan Kochunarayanan, M.~S. Ansari, and Vijendra Prasad.
@@ -85,6 +114,7 @@ A.~Nass, M.~Stancari, E.~Steffens, Donald~G. Crabb, Yelena Prok, Matt Poelker, S
 N~Osborne, K~Verhaegh, M~D Bowden, T~Wijkamp, N~Lonigro, P~Ryan, E~Pawelec, B~Lipschultz, V~Soukhanovskii, T~Van Den~Biggelaar, and {the MAST-U Team}.
 \newblock Initial fulcher band observations from high resolution spectroscopy in the {MAST}-u divertor.
 \newblock 66(2):025008.
+\newblock {JCR分区}: Q2 中科院分区升级版: 物理与天体物理2区 影响因子: 2.3 5年影响因子: 2.3 {EI}: 是 南农高质量: C.
 
 \bibitem{rakitzis_highly_2005}
 T.~Peter Rakitzis.
@@ -105,6 +135,7 @@ M.~Tanaka, N.~Shimakura, and Yu.A. Plis.
 E.~Tatarova, F.~M. Dias, C.~M. Ferreira, and N.~Puač.
 \newblock Spectroscopic determination of h, he, and h2 temperatures in a large-scale microwave plasma source.
 \newblock 101(6):063306.
+\newblock {JCR分区}: Q3 中科院分区升级版: 物理与天体物理3区 影响因子: 2.5 5年影响因子: 2.7 {EI}: 是 南农高质量: B.
 
 \bibitem{vitanov_stimulated_2017}
 Nikolay~V. Vitanov, Andon~A. Rangelov, Bruce~W. Shore, and Klaas Bergmann.
@@ -115,6 +146,12 @@ Nikolay~V. Vitanov, Andon~A. Rangelov, Bruce~W. Shore, and Klaas Bergmann.
 Dirk Wünderlich and Ursel Fantz.
 \newblock Evaluation of state-resolved reaction probabilities and their application in population models for he, h, and h2.
 \newblock 4(4):26.
+\newblock 中科院分区升级版: 化学3区 影响因子: 1.5 5年影响因子: 1.5.
+
+\bibitem{zelenski_high-intensity_2025}
+A.~Zelenski.
+\newblock High-intensity polarized ion sources for the high-energy accelerators and colliders.
+\newblock 56(2):346--354.
 
 \bibitem{__2009}
 {朱悉铭}.

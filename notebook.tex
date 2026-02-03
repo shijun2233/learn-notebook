@@ -21,6 +21,7 @@
 \usepackage{ctex}
 \usepackage{mhchem} % 化学式宏包
 \usepackage{booktabs} % for professional-looking tables
+\usepackage{subcaption} % for subfigure environment
 
 % --- 颜色配置开始 ---
 % 使用 xcolor 包以获得更多颜色选项
@@ -110,6 +111,9 @@
 \section{极化H/D源}  
 
 
+\subsection{High-Intensity Polarized Ion Sources for the High-Energy Accelerators and Colliders\cite{zelenski_high-intensity_2025}}
+
+
 \subsection*{原子束源总体}
 
 
@@ -142,9 +146,153 @@
 \end{table} 
 在层流-分子流过渡区，DSMC可准确预测束流速度，但横向温度对碰撞模型参数敏感，需进一步优化。因此，DSMC可用于设计和优化原子束源。
 
-
+\subsection{Modeling polarized atomic beam source (PABS)\cite{larionov_modeling_2025}}
 
 \subsection*{解离器论文}
+
+
+\subsection*{磁铁设计相关论文}
+
+\subsection{Design of a Strong Gradient Magnet for the Deflection of Nanoclusters\cite{masschaele_design_2012}}
+\paragraph{基本背景}Rabi型磁铁是当前斯特恩盖拉赫装置采用的磁铁的一种典范，本文介绍相关类型磁铁的设计与优化方案。首先给出原子在梯度磁场中的受力大小：
+\begin{equation}
+\vec{F} = \left(\vec{\mu} \bullet \vec{\nabla}\right) \vec{B}
+\label{eq:force_on_atom}
+\end{equation}
+其中， $\vec{\mu}$为原子的磁矩向量，$\vec{B}$为磁场向量。未来描述原子的运动，引入一个笛卡尔坐标系$(\text{x},\text{y},s)$，其中$s$轴为束流的运动方向，因为磁铁要使得原子或分子有足够的偏转，所以磁铁需要有足够的长度或者梯度，因此我们可以忽略边缘场的影响。考虑到对称性，如果$s$轴与束流方向是平行的，那么我们可以假定$B_s = 0$。在束流运动的过程中，磁矩会与磁场对齐，因此我们假设磁矩沿着束流方向的时间平均值为$\mu_s = 0 $。这里要特别提到，对于分子与原子团簇的磁矩不容易计算，因为不同的量子态之间有不同的有效偶极矩。如果可以使用这种磁铁来分离分子，那么是否会用来分离氢分子的四种状态？如果可以，那么极化氢分子粒子源就有了可能性。我们根据式\ref{eq:force_on_atom}可以得到原子沿着磁场梯度分离的方程为:
+\begin{equation}
+d_z = s \left\langle \mu_z \right\rangle \frac{\partial B_z / \partial z }{mv ^2}
+\label{eq:distance_separation_equation}
+\end{equation}
+其中，$a$是一个以来磁铁长度与漂移距离的因子，$m$为原子质量，$v$为原子速度，$\left\langle \mu_z \right\rangle$是原子或分子磁偶极矩在z轴上投影的时间平均值。可以在文献\cite{compagnon_molecular_2001}中找见这个偏转磁铁的示例，之后来解析这个文献。
+\paragraph{磁铁设计方法} 在该文献中，磁铁设计被拆分为以下几个部分:
+\begin{itemize}
+    \item 2D magnet design using a coupling between FEM (finite element) and beam simulation;
+    \item 3D magnet design including FEM-TD calculations to study pulsed operation;
+    \item 2D and 3D thermal calculations;
+    \item 3D CAD design and mechanical FEA.
+\end{itemize}
+这篇文章中，使用二位仿真软件FFMM来优化磁铁极头，由于磁铁的长度远大于磁铁间隙，因此使用二维模拟是比较近似的。极头形状用FEMM优化，使用OCtave-FEMM包，改包是FEMM与matlab或者OCtave之间的接口。Matlab程序用于扫描极头参数并计算磁感应强度$\mathbf{B}$，每次用FEMM模拟磁场之后，我们通过求解运动方程模拟粒子从准直器到探测平面的运动，粒子的初始位置与初始分布，通过模拟粒子的运动，我们可以向磁场模拟工具反馈，形成一种类似于PID结构的方案？在静磁场中，FFEMM通过磁矢势$\mathbf{A}$寻找满足麦克斯韦分布的场型，为此，FEMM使用线性函数，最终计算的磁矢势$\mathbf{A}$收敛到$h^{-2}$，其中$h$是特征网格尺寸。计算出磁矢势$\mathbf{A}$之后通过微分方程计算磁感应强度$\mathbf{B}$，因此，磁感应强度$\mathbf{B}$收敛到$h^{-1}$。同时，FEMM提供了平滑长的选项来降低计算误差幅度。为了计算磁感应强度的梯度，我们需要计算磁矢势的二阶导数，因此无法保证缩小网格尺寸之后梯度场会改善，因此需要对FEMM的结果进行仔细的后处理。二维模拟之后，使用CSR STUDIO SUITE进行三维模拟，计算铁轭以及边缘场，CST的低频求解器可用于研究脉冲作下涡流的影响。CST MPHYSICS STUDIO和FEMM的热求解器分别使我们能够在三维和二维中研究设计磁铁的热性质。现在已经有磁场计算软件OPERA，可以用于模拟磁场，考虑到2012年可能没有这么多的模拟软件，现在模拟理应更快更好
+\paragraph{结果}
+本论文设计并优化了两种磁铁配置：1. Herm 和 Herschbach 在2962年设计的拉比型二级铁\cite{herm_magnetic_1962}；2. 类似四级铁的二级铁构型\cite{mccolm_considerations_1966}。下面详细介绍不同的磁铁，四级铁的设计基于由anFysik开发的S-DALINAC上的四极铁，为了适应斯特恩盖拉赫实验的需求，将四级铁旋转了45°变成一个斜四级铁。四级铁和拉比型或者双线型（two wire field）相比，四级铁理论上拥有最均匀的梯度磁场。图\ref{fig:two_poles_of_the_quadrupolelike_dipole}展示了这种四级铁的两个极头的样式，清晰可见的是四极极点尖端（左极）和等势面，彼此相距为90°（右极）。表\ref{parameters_of_quadrupolelike_dipole}展示了这种磁铁构型的参数。
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.6\textwidth]{figures/two_poles_of_the_quadrupolelike_dipole.png}
+    \caption{poles of the quadrupole-like dipole}
+    \label{fig:two_poles_of_the_quadrupolelike_dipole}
+\end{figure}
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{lcc}
+\hline
+\textbf{Pole set:} & \textbf{4 mm gap} & \textbf{6 mm gap} \\
+\hline
+r\_pole     & 4.74              & 7.11              \\
+alpha      & $35^\circ$        & $40^\circ$        \\
+p1         & $(-2.86;\ 2.72)$   & $(-4.66;\ 4.57)$   \\
+p2         & $(-4.96;\ 20)$     & $(-17.61;\ 20)$    \\
+p3         & $(-1.5;\ 3.5)$     & $(-3.5;\ 6.5)$     \\
+p4         & $(-1.5;\ 5.5)$     & $(-3.5;\ 8.5)$     \\
+p5         & $(17;\ 20)$        & $(17;\ 20)$        \\
+Center     & $(-6.74;\ 0)$      & $(-10.11;\ 0)$     \\
+w\_pole     & 40                & 40                \\
+length     & 200               & 200               \\
+\hline
+\hline
+\end{tabular}
+\caption{VALUES FOR THE PARAMETERS AFTER OPTIMIZATION (UNIT FOR COORDINATES AND DISTANCES IN MILLIMETER). THE COORDINATES ARE DEFINED WITH RESPECT TO THE ORIGIN X-Y (SEE Fig.~\ref{fig:two_poles_of_the_quadrupolelike_dipole})}
+\label{parameters_of_quadrupolelike_dipole}
+\end{table}
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.6\textwidth]{figures/Poles_of_the_Rabi-magnet.png}
+    \caption{Poles of the Rabi-magnet}
+    \label{fig:poles_of_the_rabi-magnet}
+\end{figure}
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{lcc}
+\toprule
+\textbf{Pole set:} & \textbf{2.666 mm gap} & \textbf{4 mm gap} \\
+\midrule
+R\_concave     & 3.333                 & 5                 \\
+Center concave & $(-2; 0)$             & $(-3; 0)$         \\
+p1             & $(-1.59; 3.31)$       & $(-2.38; 4.96)$   \\
+p2             & $(-1.59; 5.31)$       & $(-2.38; 6.96)$   \\
+p3             & $(17; 20)$            & $(17; 20)$        \\
+R\_convex      & 2.666                 & 4                 \\
+Center convex  & $(-4; 0)$             & $(-6; 0)$         \\
+p4             & $(-17; 20)$           & $(-17; 20)$       \\
+p5             & $(-4; 2.666)$         & $(-6; 4)$         \\
+origin         & $(0; 0)$              & $(0; 0)$          \\
+length         & 200                   & 200               \\
+\bottomrule
+\end{tabular}
+\caption{
+    VALUES FOR THE PARAMETERS OF THE RABI-CONFIGURATION AFTER OPTIMIZATION (UNIT FOR COORDINATES AND DISTANCES IN MILLIMETER). THE COORDINATES ARE DEFINED WITH RESPECT TO THE ORIGIN X-Y (SEE Fig. \ref{fig:poles_of_the_rabi-magnet})
+}
+\label{parameters_of_rabi_magnet}
+\end{table}
+图\ref{fig:poles_of_the_rabi-magnet}展示了拉比型磁铁的几何构型,表\ref{parameters_of_rabi_magnet}展示了拉比型磁铁的参数。需要注意的是，这些几何参数是已经经过FEMM优化后的结构。
+
+图\ref{fig:gradient_as_a_function_of_the_current_of_two_magnet}向我们展示了两种拉比型磁铁和类似四级铁的二级铁的梯度场随着线圈电流的变化的模拟结果。从图中我们可以看见拉比型磁铁产生的磁场梯度低于四级铁产生的磁场梯度，并且拉比型磁体的饱和电流低于四级铁。要达到高场梯度（400 T/m），磁铁要在饱和条件下工作。
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.6\textwidth]{figures/gradient_as_a_function_of_the_current_of_two_magnet.png}
+    \caption{Plot of the gradient as a function of the current in the coils for the four studied pole sets.}
+    \label{fig:gradient_as_a_function_of_the_current_of_two_magnet}
+\end{figure}
+通过模拟，间隙较小的磁铁在约2000安培匝处饱和，而间隙较大的磁铁在2800安培匝处饱和。实际值取决于最终用于磁体的材料。磁铁建成后，必须测量“I-B”曲线和磁场图，并与模拟结果进行比较。
+
+接着我们来看粒子追踪程序，图\ref{fig:rabi_type_track}和图\ref{fig:quadrupole_track}展示了两种磁铁的粒子运动结果。
+\begin{figure}[h!]
+    \centering
+    \begin{subfigure}{0.8\textwidth}
+        \centering
+        \includegraphics[width=0.8\textwidth]{figures/Rabi-type_track.png}
+        \caption{Beam deflection for the Rabi-type with small gap (4 mm) at 3000 A.turns. The gray scale values represent the average field gradient noticed by the cluster.}
+        \label{fig:rabi_type_track}
+    \end{subfigure}
+    \vskip\baselineskip
+    \begin{subfigure}{0.8\textwidth}
+        \centering
+        \includegraphics[width=0.8\textwidth]{figures/quadrupole_track.png}
+        \caption{Beam deflection for the quadrupole type with small gap (4 mm) at 3000 A.turns. The gray scale values represent the average field gradient noticed by the cluster.}
+        \label{fig:quadrupole_track}
+    \end{subfigure}
+    \caption{Particle tracking results for (a) Rabi-type magnet and (b) quadrupole-like magnet.}
+    \label{fig:magnet_particle_tracking}
+\end{figure}
+在本次模拟中，入射银原子的初始速度是$v= (0.2,1,1620) [\text{m} / \text{s}]$,经过一个$0.3 \text{mm} \times 44 \text{mm}$的狭缝，检测屏幕位于磁铁后方50cm处。 横向速度由源和准直器决定。从图4可以得出结论，对于拉比型磁铁，在磁铁饱和作时，束流的形状变化不大，但左右光束的宽度不同。对于四级铁类型，束流宽度保持良好，但垂直力会使束流从直线变形为香蕉形。四级铁的分离距离大于拉比型，因为四级铁的梯度更大。
+
+接着我们来看磁铁的电气参数。要达到400T/m的磁场梯度，需要很高的电流，因此会产生很大的电流，在本文的设计中，作者使用外径6.36 mm，壁厚1.5mm的铜管，为了达到400T/m的磁场梯度，使用两个40匝的线圈，每个线圈都运行75A的电流。线圈串联连接，通关的横截面积是23mm$^{2}$,电流密度可以达到3.2 A/mm$^2$。铜管长度为没匝0.6m，40匝，没匝大约0.02 $\omega$, 电压降大约为3V， 因此每圈线圈功率为100 W。 在原子束实验中，为了能在每次脉冲后关闭磁铁进行参考测量，需要使用低电感的磁铁。研究人员借助 CST EM STUDIO 的低频时域求解器，模拟了矩形脉冲下铁心中的涡流效应，得到涡流时间常数为 0.05 秒，磁场完全建立则需要 0.5 秒；同时，利用静磁求解器提取自感矩阵，发现串联双线圈的磁场抵消效应有助于缩短磁场上升时间，计算得出电感值为 0.01 亨，对应的时间常数为 0.25 秒，这一数值远大于涡流的时间常数，表明电感是限制磁铁响应速度的主要因素。不过我们的极化源应当不需要考虑这些参数。图\ref{fig:magnetic_of_time}和展示了磁铁的磁场随时间变化。
+\begin{figure}[h!]
+    \centering
+    \begin{minipage}{0.48\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{figures/magnetic_of_time.png}
+        \caption{CST EM STUDIO calculation of the magnetic field as a function of time for a rectangular pulse of 500 ms.}
+        \label{fig:magnetic_of_time}
+    \end{minipage}
+    \hfill
+    \begin{minipage}{0.48\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{figures/CAD_model.png}
+        \caption{CAD drawing of the magnet. The poles are replaceable and slide in a groove on the bottom and top plate for accurate positioning. 40 current carrying copper tubes per coil induce the magnetic field $\mathbf{B}$.}
+        \label{fig:CAD_model}
+    \end{minipage}
+\end{figure}
+图\ref{fig:CAD_model}展示了磁铁的CAD模型，在完成磁铁的电磁设计后，进行了机械设计。这是用T-FLEX完成的，这是一款包含有限元分析（FEA）工具的3D CAD/CAM软件，用于研究模型的热和机械性能。利用T-FLEX，我们可以计算磁铁因磁力引起的变形。通过机械模拟，我们可以得出一个结论：对于拟议设计，变形量大约为一微米。由于这种变形远小于加工精度，我们可以忽略此效应。磁铁设计使磁极可更换。磁极件滑入纵杆上的凹槽中。使用铁螺栓将纵杆固定在纵架上。
+
+\subsection{Strong permanent magnet gradient deflector  for Stern-Gerlach-type experiments on molecular beams\cite{liang_strong_2020}}
+
+本文作者设计了用于偏转分子和原子束的梯度永磁铁，达到了与电磁铁相当强度。（1.1 T, 330T/m），这在成本、便携性和结构可扩展性方面提供了便捷的选择。
+
+
+
 
 
 \subsection*{射频跃迁相关论文}
@@ -301,9 +449,10 @@ $R_F$是电流放大器的反馈电阻，$u_{out}^{k}$是电流放大器输出�
 
 
 
-
 \subsection*{LSP论文}
 \subsection{Precision lamb-shift polarimeter for polarized atomic and ion beams\cite{engels_precision_2003}}
+
+LSP是一种可以在短时间内测定原子束或者低能离子束极化度的仪器。
 
 首先考虑不同的修正:
 \paragraph{Spin-Filter修正}
@@ -391,6 +540,8 @@ Stimulated Raman adiabatic passage (STIRAP) 是一种利用中间态，将两个
 \begin{equation}
     i\hbar\frac{\text{d}}{\text{d} t}\Psi(t) = \hat{H}\Psi(t)
 \end{equation}  
+
+
 
 \subsection{Spin manipulation and nuclear polarization enhancement in particle beams with static magnetic fields\cite{kannis_spin_2025}}
 
