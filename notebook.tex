@@ -289,11 +289,352 @@ length         & 200                   & 200               \\
 
 \subsection{Strong permanent magnet gradient deflector  for Stern-Gerlach-type experiments on molecular beams\cite{liang_strong_2020}}
 
-本文作者设计了用于偏转分子和原子束的梯度永磁铁，达到了与电磁铁相当强度。（1.1 T, 330T/m），这在成本、便携性和结构可扩展性方面提供了便捷的选择。
+本文作者设计了用于偏转分子和原子束的梯度永磁铁，达到了与电磁铁相当强度。（1.1 T, 330 T/m），这在成本、便携性和结构可扩展性方面提供了便捷的选择。该文章的背景是团簇实验，看不懂，不想看，略过不介绍，我们重点关注磁铁部分。
+
+该磁场由三个镀镍的立方体型N52钕磁铁产生，边缘长度为$50.8\,\mathrm{mm}$（SM Magnetics, Part no. C2002\_N52）并且堆放在铝制方管中，外宽63.5 mm ，壁厚4.8 mm，磁铁与管内壁之间的缝隙填充了1毫米厚的青铜条，用于将磁铁置中并协助滑入通道。磁铁的样子如图\ref{fig:Strong_permanent_magnet}所示。在此磁铁中，铁轭\textcircled{4}和极头\textcircled{5}由permendur alloy plate（Hyperco50A, acquired from Ed Fagan Inc.）加工而成，并且在真空中进行了退火处理，之后讨论极头的形状与极头产生的场。垫片textcircled{6}和支撑\textcircled{7}由铝制成，他们的高度和gap要使得极头精准对齐。铝制安装版\textcircled{8}增加了组件的刚性，并且用于将磁铁安装在真空腔室内。在Darmstadt装置中，组件通过支架固定在顶法兰上，而在南加州大学，它悬挂在重型线性导管上，可以抬高装置，使分子束能够无阻碍地通过底部支撑的开口，在将永磁铁插入框架之前，用三个螺栓\textcircled{9}固定。
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.6\textwidth]{figures/Strong_permanent_magnet.png}
+     \caption{The magnetic deflection assembly's face view (a) and a photograph (b). 
+    \textcircled{1} Magnet stack with magnetization direction shown; 
+    \textcircled{2} lengthwise shim strips; 
+    \textcircled{3} square tubing; 
+    \textcircled{4} yoke plates; 
+    \textcircled{5} pole shoes; 
+    \textcircled{6} alignment spacer; 
+    \textcircled{7} brace; 
+    \textcircled{8} mounting plate; 
+    \textcircled{9} magnet confinement bolts. 
+    The small black dash in the gap between the pole shoes in panel (a) marks the approximate entry position of the collimated molecular beam. 
+    Panel (c) shows the channel extension and press screw used for insertion of the permanent magnets.}
+    \label{fig:Strong_permanent_magnet}
+\end{figure}
+此时本文作者遇到了一个比较困难的问题，就是如何把永磁铁插入到铝框架中。这些磁铁又光滑又脆无法被夹具夹住，而且三块磁铁进入通道会有非常强烈的排斥力。为了解决这个问题，作者加入了一个延长件，如图\ref{fig:Strong_permanent_magnet}$(\text{c})$所示。方形通道\textcircled{3}向前后衍生大约1.5 cm，并且钻上了螺纹孔，这些螺纹孔可以将一段30cm长的相同方形管道固定在框架上，之前铺设的青铜条最初被制作的和延伸管道一样长，这样的设计下，立方体磁铁可以一个个插入远处的开口，并由非磁性棒推动向前。延长管里的青铜管可以使得磁铁轻松滑进框架中。
+
+介绍完作者这天马行空的点子之后，我们来看磁场的具体构型。一个非均匀磁场对原子，分子或者团簇施加的力为$ \vec{F} = \left\langle \mu\right\rangle \nabla B$，其中，$\left\langle \mu\right\rangle = - \partial U / \partial B $是粒子有效磁偶极矩在磁场方向时间平均投影大小，$U$是粒子在磁场中的能量大小，因此，如果束流沿着$y$轴运动，并且磁场在$z$轴方向又强梯度，那么束流就会在$z$轴方向上偏转，粒子比偏转的距离正比于$\left\langle \mu\right\rangle \partial B / \partial z$。如果$\left\langle \mu\right\rangle$是正比于磁场$B$，那么粒子的分离程度就正比于$B(\partial B / \partial z)\propto \partial (B^2) / \partial z$，磁铁极头的设计目标就是是得分离在束流上尽可能均匀。这可以通过“twowire”或者“Rabi”型磁铁来实现。另一方面，如果c磁矩$\left\langle \mu\right\rangle $的大小是固定的，就希望$\partial B / \partial z$是均匀的，就可以用上文提到的四级铁型磁铁。最终通过FEMM模拟，本文作者决定使用文献\cite{masschaele_design_2012}中提到的4 mm gap类四级铁型磁铁。可以从图\ref{fig:Strong_permanent_magnet}中看见极头的形状。磁铁的磁场可以从这个图\ref{fig:magnetic_field_quadrupole_like}中看见。
+\begin{figure}[h!]
+    \centering
+    \begin{subfigure}{0.32\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{figures/magnetic_field_quadrupole_like_a.png}
+        \caption{}
+        \label{fig:magnetic_field_quadrupole_like_a}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}{0.32\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{figures/magnetic_field_quadrupole_like_b.png}
+        \caption{}
+        \label{fig:magnetic_field_quadrupole_like_b}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}{0.32\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{figures/magnetic_field_quadrupole_like_c.png}
+        \caption{}
+        \label{fig:magnetic_field_quadrupole_like_c}
+    \end{subfigure}
+    \caption{(a) The magnetic field, (b) its deflecting gradient $\partial B / \partial z$, and (c) the defocusing gradient  |$\partial B / \partial z$| between the deflector’s poles. The pole gap is 4 mm and the pole radius is 4.74 mm. The  contour lines in (a) are drawn at intervals of 0.2 T, and those in (b,c) at intervals of 50 T/m. The  calculations were performed with the use of FEMM software and its nominal library parameters  for the magnet and yoke alloys (actual material parameters vary, see text). The plots were  prepared by employing 0.01 mm mesh size in the region between the pole shoes, differentiating  the calculated field numerically and then smoothing the field and derivative values with a 0.2 mm  window for display in this figure.}
+    \label{fig:magnetic_field_quadrupole_like}
+\end{figure}
+图\ref{fig:magnetic_field_quadrupole_like_a}展示了磁场的分布，图\ref{fig:magnetic_field_quadrupole_like_b}展示了磁场梯度$\partial B / \partial z$，图\ref{fig:magnetic_field_quadrupole_like_c}展示了$\abs{\partial B / \partial z}$
+实际组装单元内部的磁场测量过程如下：将霍尔磁强计探头的尖端固定在一个小型铝制滑块上，该滑块与极靴间隙贴合，且可沿极靴全长滑动。探头在 x 轴和 z 轴方向上均紧贴准直束流区域中心布置。测量结果表明，极靴间该位置的磁场强度在磁体全长 15 厘米范围内的波动度优于 1\%，磁场大小为 1.1 特斯拉。该数值较图 2 (a) 中仿真结果低 35\%。如下一节所述，这与实验测得的磁场梯度变化规律一致 —— 实验梯度值同样较模型计算值低 35\%。上述绝对值偏差源于仿真模型与实际工况的材料性能差异，例如 N52 永磁合金的磁化强度偏低，或者permendur pieces退火不充分。
+
+通过原子束检验磁场后，发现磁场大约为$334 \pm 20 $ T/m，这个值比模拟值508 T/m低了35\%。
 
 
+\subsection{Optimization of a Stern-Gerlach Magnet by Magnetic Field-Circuit Coupling and Isogeometric Analysis\cite{pels_optimization_2015}}
 
+本文以有限元分析(finite-element)与等几何分析(Isogeometric Analysis)为基础优化Rabi型磁铁，优化过程中需要解很多尤溪县元方程，考虑吧到计算效率，优化采用二维模型。在极头采用IGA模型代替了整个二维模型，并与其余部分的磁等效模型结合。这种方法可以快速精确的解决问题，并且辅助CAD设计。
 
+\paragraph{磁铁模型} 磁铁是电磁铁，采用直流电驱动，利用麦克斯韦方程:
+\begin{equation}
+\vec{\nabla} \times \left( \mu^{-1}(\vec{B}) \vec{\nabla} \times \vec{A}\right) = \vec{J}
+\label{eq:maxwell_equation}
+\end{equation}
+其中，$\vec{A}$是磁矢势，$\vec{B} = \vec{\nabla} \times \vec{A}$是磁感应强度，$\mu$是磁导率，$\vec{J}$是电流密度。在$x$方向的磁场梯度可以写作:$\tau = \frac{\text{d} \abs{\vec{B}}}{\text{d} x}$,可以由磁矢势$\vec{A}$解出磁场梯度。束流区域的平均磁场梯度可以由以下式子计算:
+\begin{equation}
+\tau_{\text{av}} = \frac{1}{|V_{\text{beam}}|} \int_{V_{\text{beam}}} \tau(x,y) \, \mathrm{d}V 
+\label{eq:average_magnetic_field_gradient}
+\end{equation}
+磁场的不均匀度可以由以下公式来刻画:
+\begin{equation}
+\epsilon = \sqrt{\frac{1}{|V_{\text{beam}}|} \int_{V_{\text{beam}}} \left( \frac{\tau(x,y)}{\tau_{\text{av}}} - 1 \right)^2 \, \mathrm{d}V} 
+\label{eq:magnetic_field_unequality}
+\end{equation}
+我们优化的目标就是使得$\tau_{\text{av}}$达到最大值同时使得$\epsilon$最小化。优化的结构如图所示:
+\begin{figure}
+    \centering
+    \includegraphics[width=0.6\textwidth]{figures/3D_model_of_the_Stern-Gerlach_magnet.png}
+    \caption{3D model of the Stern-Gerlach magnet.}
+    \label{fig:3D_model_of_the_Stern-Gerlach_magnet}
+\end{figure}
+该磁铁的线圈与外铁轭不会被改变，值改变极头的形状。可以基于广义的磁电路耦合来计算外部线圈部分。将极头附近的区域用$V_P$来表示，将部分模型$V_P$等效于磁阻$\mathcal{R}_P$, 并与代表线圈的磁动势$\mathcal{F}_{mmf}$以及代表外部轭部的磁阻 $\mathcal{R}_y$ 一同嵌入到磁路中。通过该电路的磁通量记为 $\Phi$。总磁阻为 $\mathcal{R}_{\text{tot}} = \mathcal{R}_P + \mathcal{R}_y$。霍普金森定律可表示为 $\mathcal{F} = \mathcal{R}_{\text{tot}} \Phi$。
+
+让减缩模型的有限元形函数 \(\vec{\omega}_j\) 被编号，使得 \(j \in \{1, \dots, M\}\) 与 \(V_p\) 内部的边关联，\(j \in \{M+1, N\}\) 与边界 \(S_p := \partial V_p\) 上的边关联。磁矢势被离散化为
+
+\[\vec{A}_p(\vec{x}) = \sum_{j=1}^M a_j \vec{\omega}_j + \Phi \vec{\chi},\]
+
+其中 \(\vec{\chi}|_{S_p} := \frac{\vec{A}^*}{\Phi^*}|_{S_p}\)，\(\vec{A}^*, \Phi^*\) 来自在原域 \(V\) 上求解 (1) 并延续到 \(V_p\) 内部。加权残差方法导致 \(K_{aa} a + K_{ab} \Phi = \dots\)，其中 \(K_{aa} \in \mathbb{R}^{M \times M}\) 是通常的刚度矩阵，并且
+
+\[(K_{ab})_{i1} = \int_{V_p} \mu^{-1} \vec{\nabla} \times \vec{\omega}_i \cdot \vec{\nabla} \times \vec{\chi} \, dV,\]
+
+其中 \(i = 1, 2, \dots, M\)。一个附加方程将部分模型的磁动势反馈到外部电路。\(V_p\) 的磁动势计算为
+
+\[F_p = \int_{\tilde{S_p}} \vec{H} \cdot d\vec{s} = \int_{\tilde{S_p}} (\mu^{-1} \vec{\nabla} \times \vec{A}) \cdot d\vec{s},\]
+
+其中 \(\tilde{S_p}\) 是 \(S_p\) 的适当部分。将 (4) 引入 (6) 并分部积分导致 \(F_p = K_{ba} a + R_p \Phi\)，其中 \(K_{ba} \in \mathbb{R}^{1 \times M}\) 可以解释为 Petrov-Galerkin 框架中由新测试函数 \(\vec{\chi}'\) 的权重。最后，场-电路耦合方程组是
+
+\[\begin{pmatrix}
+K_{aa} & K_{ab} \\
+K_{ba} & R_p + R_y
+\end{pmatrix}
+\begin{pmatrix}
+a \\
+\Phi
+\end{pmatrix}
+=
+\begin{pmatrix}
+0 \\
+F_{mmf}
+\end{pmatrix}.\]
+
+IGA是一种新的偏微分方程离散化技术，可以理解为标准有限元方法的一般化，只不过在近似过程中加入了很多基函数，几何划分于基函数用传统的B-样条曲线来描述，并且IGA可以获得高度平滑的解。作者使用了GroPDEs软件包，这个软件包可以提供卷曲的B-样条函数。优化函数要结合高平均磁场梯度于低的不均匀系数的要求，该函数被定义为:
+\begin{equation}
+f(x,y,w) = \frac{\tau_{\text{W}}}{|\tau_{\text{av}}|} + \epsilon - \frac{\tau_{\text{W}}}{|\tau_{\text{av}}|}\epsilon
+\label{eq:objective_function}
+\end{equation}
+其中,$x,y,w$是平面坐标与权重系数，$\tau_{W} = 8 \text{T/m}$，优化的目标是使得式\ref{eq:objective_function}达到最小值。用MatLab的优化工具对极头的几何形状进行了优化。
+
+\subsection{Optimization of a stern–gerlach magnet by magnetic field–circuit coupling and isogeometric analysis\cite{pels_optimization_2015-1}}
+这篇论文是上一篇论文的完整版，在这里我将详细介绍相关的内容。文中介绍的磁铁已经在KU Leuven in Belgium建成并且使用，磁铁可以达到 2000 T/m的磁场梯度，不均匀度在5 \%。考虑对横截面进行优化。为了减少计算量，有限元模型的一部分被线圈与铁轭的构成的等效磁电路所代替。只对极头附近用非均匀有理B-样条函数（non-uniform rational B-splines (NURBS)）来描述形状。因此几何形状用CAD语言进行表示，同时这样可以方便地与制造商沟通。在空间离散化方面使用了IGA方法。IGA是一种比较新的方法，在近似过程中使用更有规律的基函数，从而改进了有限元方法。几何形状与基函数都采用B-样条函数或者NURBS函数。传统的有限元方法中基函数只在元素的边界上连续，其场梯度是不连续的，而IGA方法可以获得包括梯度在内的平滑解。接着我们介绍数学模型，数学模型之后介绍部分模型与磁等效电路。
+
+\paragraph{数学模型}
+磁铁由一个直流电驱动，因此在计算区域$\Omega$内，可以用麦克斯韦方程组来描述磁场:
+\begin{equation}
+\vec{\nabla} \times \left( \mu^{-1}(\vec{B}) \vec{\nabla} \times \vec{A}\right) = \vec{J}
+    \label{eq:maxwell_equation_full}
+\end{equation}
+其中 $\vec{A}$ 是磁矢势， $\mu$ 是磁导率（非线性），$\vec{J}$ 是用winding function给出的，在线圈中给出的电流密度是$(N_c/\abs{S_c}I)$，该式中，$N_c$是线圈的匝数，$\abs{S_c}$是线圈的横截面积，$I$是线圈中的电流。在$x$-方向的磁场梯度可以表示为$\tau =  \text{d} \abs{\vec{B}} / \text{d}x$，可以通过后处理从磁矢势$\vec{A}$中解出。在束流通过区域$\Omega_{beam}$中的平均磁场梯度可以表示为:
+\begin{equation}
+\tau_{\text{av}} = \frac{1}{|\Omega_{beam}|} \int_{\Omega_{beam}} \tau(x,y) \, \mathrm{d} \Omega
+\label{eq:average_magnetic_field_gradient_in_the_beam}
+\end{equation}
+磁场梯度的不均匀度用以下公式来刻画:
+\begin{equation}
+\epsilon = \sqrt{\frac{1}{|\Omega_{\text{beam}}|} \int_{\Omega_{\text{beam}}} \left( \frac{\tau(x,y)}{\tau_{\text{av}}} - 1 \right)^2 \, \mathrm{d}\Omega}
+\label{eq:magnetic_field_unequality_in_the_beam}
+\end{equation}
+接着我们来关注空间离散化的方法。在有限元方法中，磁矢势可以近似表示为:
+\begin{equation}
+    \vec{A}(\vec{x}) = \sum_{j=1}^{N_{DoF}} a_j \vec{\omega}_j(\vec{x}) 
+    \label{eq:magnetic_field_approximation}
+\end{equation}
+其中，$a_j$ 是自由度（degrees of freedom, DoFs）, $\{\vec{\omega}_j(\vec{x})\}$是定义在网格空间$\Omega$上的向量形状函数，$N_{DoF}$是DoFs的数量。 将公式\ref{eq:average_magnetic_field_gradient_in_the_beam}使用同一加权函数，并且在空间$\Omega$内进行机房，可以得到$\mathbf{K(a)a} = \mathbf{f}$的方程组:
+\begin{equation}
+\begin{aligned}
+(\mathbf{K})_{i,j} &= \int_{\Omega} \mu^{-1} \vec{\nabla} \times \vec{\omega}_i \cdot \vec{\nabla} \times \vec{\omega}_j \, \mathrm{d}\Omega, \\
+(\mathbf{f})_i &= \int_{\Omega} \vec{J} \cdot \vec{\omega}_i \, \mathrm{d}\Omega.
+\end{aligned}
+    \label{eq:magnetic_field_approximation_equation}
+\end{equation}
+在三维有限元近似下，$\vec{\omega}_j$被选作经典的边缘函数，在本文中，作者使用四面体网格上的二阶基函数，并进行了 tree/cotree 正则化。在二维情况下，选择$\vec{\omega_j} = N_j(x,y)\vec{e_z}/l_z$，其中，$N_j(x,y)$是standard lowest order nodal function，$\vec{e_z}$是$z$方向的单位向量，$l_z$模型在$z$方向上的长度。对于IGA的情况，可以为二维和三维的情况单独构造专用的基函数。为了在三维空间求解麦克斯韦方程，$\vec{\omega}_j$是一个典型的curlconforming transformation of B-splines，同时自由度DoFs $a_j$是B-样条曲线体积的控制点。接着使用Newton-Raphson方法求解方程组。这里考虑到铁轭的非线性效应。得到了磁矢势$\vec{A}$之后，计算磁场梯度需要计算他的二阶导数，但是经典的有限元方法只能报纸$C^0$连续性，这样不利于计算磁场梯度的大小，通过使用$C^p$的B-样条函数，可以获得$C^{p-1}$的连续性和高度规则的磁场梯度。分别使用CST与FEMM软件计算三维与二维模型，电流为40A，匝数65，模拟的三维图\ref{fig:3d_model}与二维图\ref{fig:2d_model}如图所示,模拟结果的对比如表\ref{tab:optimization_results}。
+\begin{figure}[h!]
+    \centering
+    \begin{minipage}{0.48\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{figures/3D_model_of_the_Stern-Gerlach_magnet.png}
+        \caption{3-D model of one half of the Stern–Gerlach magnet (modeled with CST EM STUDIO)}
+        \label{fig:3d_model}
+    \end{minipage}
+    \hfill
+    \begin{minipage}{0.48\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{figures/2D_model_of_the_Stern-Gerlach_magnet.png}
+        \caption{2-D model of one half of the Stern–Gerlach magnet showing the computational domain (FEMM)}
+        \label{fig:2d_model}
+    \end{minipage}
+\end{figure}
+\begin{table}[htbp]
+  \centering
+  \caption{AVERAGE MAGNETIC FIELD GRADIENT AND INHOMOGENEITY FACTOR BEFORE AND AFTER THE OPTIMIZATION ($\Omega_\text{p}^*$ OBTAINED WITH THE WEIGHTING FACTOR $\tau_\text{w}^* = 8$ T/m)}
+  \label{tab:optimization_results}
+  \small
+  \resizebox{0.6\linewidth}{!}{
+  \begin{tabular}{lcc}
+    \toprule
+    & $\tau_{\text{av}}$ & $\epsilon$ \\
+    \midrule
+    FEMM (2D, reference geometry $\Omega^0$) & $-238$ T/m & $0.0523$ \\
+    \midrule
+    CST (3D, reference geometry $\Omega^0$) & $-237$ T/m & $0.0503$ \\
+    CST (3D, optimized geometry $\Omega^*$) & $-266$ T/m & $0.0201$ \\
+    Improvement & $12.2\%$ & $60.0\%$ \\
+    \midrule
+    GeoPDEs (2D, reference geometry $\Omega_\text{p}^0$) & $-240$ T/m & $0.0477$ \\
+    GeoPDEs (2D, optimized geometry $\Omega_\text{p}^*$) & $-282$ T/m & $0.0122$ \\
+    Improvement & $17.5\%$ & $74.4\%$ \\
+    \bottomrule
+  \end{tabular}
+  }
+\end{table}
+
+\paragraph{PARTIAL MAGNET MODEL} 接着我们来介绍部分磁铁模型，保持线圈与外铁轭不受磁铁影响，而磁极区域可以对磁通量产生较大的影响，因此我们在模拟优化的过程中着重考虑磁极的优化。用$\Omega_p$来表示磁极尖端的部分。从一个截面$\Gamma_p = \partial \Omega_p$开始。并且进行了一些调整。
+
+边界条件冻结:使用如下方法降低计算复杂度。1）在$\Omega^0$的体积内用有限元方法解出磁矢势$\vec{A}^0$（如图\ref{fig:z_component_of_the_magnetic_vector_potential}）, 2）提取极间界面的场分布$\vec{A}^0_p := \vec{A}^0 |_{\Gamma_p}$, 3）对于部分模型的解$\vec{A_p}$,原始分布作为Dirichlet data$\vec{A}_p |_{\Gamma_p}=\vec{A^0_p} $
+
+磁场-电路耦合:用磁性等效电路来表示磁铁的外部，并通过磁场电路耦合将剩余的模型耦合在一起，建立了磁场分布于外部磁等效电路之间的耦合如图\ref{fig:z_component_of_the_magnetic_vector_potential}。
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.6\textwidth]{figures/z-component_of_the_magnetic_vector_potential.png}
+    \caption{z-component of the magnetic vector potential and the test function  $\chi'$ along the boundary $\tilde{\Gamma_p}$.}
+    \label{fig:z_component_of_the_magnetic_vector_potential}    
+\end{figure}
+磁等效电路的参数包含以下几个量: magnetomotive forces磁动势（单位为安匝），reluctances磁阻（单位为亨利或者欧姆）,fluxes磁通（单位为韦伯）。部分模型$\Omega_p$由整个电路的磁阻$\mathcal{R}_p$和线圈产生的磁动势$\mathcal{F}_{mmf}$还有铁轭部分的磁阻$\mathcal{R}_y$，通过磁路的磁通量用$\Phi$表示。总的磁阻表示为$\mathcal{R}_{tot} = \mathcal{R}_p + \mathcal{R}_y$，磁回路的基尔霍夫定理可以表示为$\mathcal{F}_mmf = \mathcal{R}_{tot} \Phi$。在整个磁路中储存的磁能为:
+\begin{equation}
+    W_{magn} = \frac{1}{2} \mathcal{R}_{tot} \Phi^2=\frac{1}{2} \mathcal{F}_{mmf} \Phi
+    \label{eq:magn_energy_equation}
+\end{equation}
+铁轭的磁阻由二维有限元模型计算得到。局部模型被一个于铁轭由相同磁导率$\mu_{iron}$的铁部件代替，被称为局部代替模型（replacement parital model）。磁动势表示表示为$\mathcal{F}_{mmf}$,通过适当改变线圈的电流使得replacement parital model的磁通$\Phi^0$达到与原始局部模型相同的值。$\Phi^0$通过在原始区域$\Omega$在中求解方程\ref{eq:maxwell_equation_full}并在局部模型的入口出口处利用公式$\Phi^0 = \int_{\abs{\Gamma_p}}\vec{B} \cdot \vec{n} \text{d} \Gamma$来计算。其中$\vec{n}$是边界法向量。
+这样就可以考虑到原始模型中铁轭的非线性效益。由于在局部替代模型中磁场几乎是均匀的因此可以将磁导率假设为常数$\mu_{\text{hom}}$。总磁阻的计算公式可以写作$\mathcal{R}_{tot} = \mathcal{F}_{mmf} /\Phi^0$.局部替代模型的磁阻可以表示为：
+\begin{equation}
+    \mathcal{R}_p = \frac{b_p}{\mu_{\text{hom}} \abs{\Gamma_p}}
+\end{equation}
+其中，$b_p$是局部模型的长度。外部铁轭的磁阻可以表示为$\mathcal{R}_y = \mathcal{R}_{tot} - \mathcal{R}_p$。通过上述方法就可以将部分模型与磁等效电路耦合在一起。单位磁矢势的分布定义为:
+\begin{equation}
+    \vec{\chi}|_{\Gamma_p} := \vec{A_p^0}/\Phi^0
+    \label{eq:unit_magnetic_vector}
+\end{equation}
+其中，$\vec{A_p^0}:= \vec{A}^0|_{\Gamma_p}$ 为局部模型边界上的磁矢势分布。在原始区域$\Omega^0$上解方程\ref{eq:maxwell_equation_full}并延续到$\Omega_p$的内部得到。当gap的长度增加时，会导致磁阻的增加，磁通量也会减少，此时在边界$\Gamma_p$上的磁矢势可以表示为$\Phi'\vec{\chi}(\vec{x})$
+
+现在要对简化模型的形状函数$\vec{\omega}_j$进行编号，使得$j \in \{1,\dots,M\}$处于$\Omega_p$的边缘之内，而$j \in \{M+1,N\}$属于边缘$\Gamma_p$。因此，磁矢势可以表示为：
+\begin{equation}
+    \vec{A}(\vec{x}) = \sum_{j=1}^{M} a_j \vec{\omega}_j + \Phi_{\vec{\chi}}
+    \label{eq:magnetic_vector_approximation_in_FEM}
+\end{equation}
+$\vec{\chi}(\vec{x})$可以被理解为一个额外的global ansatz function。将加权残差法应用于公式\ref{eq:magnetic_vector_approximation_in_FEM}转为$\mathbf{K_{aa}a} + \mathbf{K_{ab}} \Phi =0$其中$\mathbf{K_{aa}} \in \mathbb{R}^{\mathbf{M} \times \mathbf{M}}$代表刚度矩阵而$\mathbf{K_{ab}}$是列向量由以下公式给定：
+\begin{equation}
+    (\mathbf{K_{ab}})_{i,1} = \int_{\Omega_p} \mu^{-1} \vec{\nabla} \times \vec{\omega}_i \cdot \vec{\nabla} \times \vec{\chi} \text{d}\Omega
+    \label{eq:K_ab_vector_element}
+\end{equation}
+其中，$i = 1,2,\dots,M$。一个附加方程将局部模型的磁动势反馈到外部电路中。局部模型$\Omega_p$的磁动势可以表示为：
+\begin{equation}
+    \mathcal{F}_p = \int_{\tilde{\Gamma_p}} \vec{H} \cdot \text{d}\vec{s} = \int_{\tilde{\Gamma_p}} (\mu^{-1} \vec{\nabla} \times \vec{A}) \cdot \text{d}\vec{s} 
+    \label{eq:partial_model_magnetomotive_force}
+\end{equation}
+其中，$\tilde{\Gamma_p}$是$\Gamma_p$的adequate part 可以在图\ref{fig:2d_model}中看见，将式\ref{eq:magnetic_vector_approximation_in_FEM}带入带\ref{eq:partial_model_magnetomotive_force}中可以得到$\mathcal{F}_p = \mathbf{K_{ba}a} + \mathcal{r_p}\Phi$，其中，$\mathbf{K_{ba}} \in \mathbb{R}^{1 \times M}$可以被理解为Petrov-Galerkin框架中的权重:
+\begin{equation}
+    (\mathbf{K_{ba}})_{1,i} = \int_{\Omega_p} \mu^{-1} \vec{\nabla} \times \vec{\chi'} \cdot \vec{\nabla} \times \vec{\omega_j} \text{d}\Omega
+    \label{eq:K_ba_vector_element}
+\end{equation}
+其中，$\vec{\chi'}$是一个新的测试函数。最后，场-电路耦合系统的方程组可以表示为:
+\begin{equation}
+    \begin{bmatrix}
+    \mathbf{K_{aa}} & \mathbf{K_{ab}} \\
+    \mathbf{K_{ba}} & \mathcal{R}_p + \mathcal{R}_y
+    \end{bmatrix}
+    \begin{bmatrix}
+    a \\
+    \Phi
+    \end{bmatrix}
+    =
+    \begin{bmatrix}
+    0 \\
+    \mathcal{F}_{mmf}
+    \end{bmatrix}  
+    \label{eq:field_circuit_coupling_system_equation}
+\end{equation}
+
+\paragraph{OPTIMIZATION OF THE MAGNET IN GeoPDEs} 终于到如何优化磁铁的部分了。使用Octave/Matlab的优化工具箱GeoPDEs对部分模型进行模拟，用来以IGA的方法对1到3维的偏微分方程进行求解。GeoPDEs提供了curl-conforming B0spline 函数用以解麦克斯韦方程组，并且支持multipatch framework，即每个子域都有独立的几何体映射。为了在GeoPDE中表示部分模型中的极头形状，整个域被分为三个区域，一个是gap区域，另外两个分别是左极头与右极头每个patch都是单位正方形到物理空间的映射$ F :[0,1]^2 \to \Omega $。$ F $ 由控制点来定义。对基函数进行加权并定义域的形状。负责描述极头的控制点被作为优化程序的变量，见图\ref{fig:Optimized_and_original_geometry} 。映射$F$函数到物理空间可以通过Newton-Raphson方法来求解。初始几何体$\Omega^{0}$的网格（见图\ref{fig:Partial_model}）是节点细化的基础，使用Winslow函数对内部参数进行优化，并自动根据形状变形，因此无需重新网格化。为了加快模拟速度，冻结了非线性的情况，使用一个恒定但是不均匀的磁阻$ v = v(\vec{B}^0(\vec{x})) $。
+\begin{figure}[htbp]
+    \centering
+    \begin{minipage}{0.48\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{figures/Partial_model.png}
+        \caption{Partial model: coarse mesh used as a basis for knot refinement. Gray: beam area. Dashed lines: division in patches.}
+        \label{fig:Partial_model}
+    \end{minipage}
+    \hfill
+    \begin{minipage}{0.48\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{figures/Optimized_and_original_geometry.png}
+        \caption{Optimized ($\Omega^\star$) and original geometry ($\Omega^0$) of the pole tips including beam area and numbered control points of original geometry. The initial $i = 1, \dots, 4$ coordinates $(x_i, y_i, w_i)$ are $(-2.00, 1.66, 0.85)$, $(-4.34, 4.00, 0.85)$, $(2.00, 1.89, 0.87)$, and $(-0.50, 4.73, 0.87)$, where $x_i$ and $y_i$ are given in millimeter.}
+        \label{fig:Optimized_and_original_geometry}
+    \end{minipage}
+\end{figure}
+
+下边对优化进行详细的介绍。A. 目标函数。用于优化的代价函数应当是高平均梯度场$\tau_{av} = \tau_{av}(\mathbf{x},\mathbf{y},\mathbf{w})$与低不均匀场$\varepsilon = \varepsilon(\mathbf{x},\mathbf{y},\mathbf{w})$的结合，其中$\mathbf{x} = {x_i},\mathbf{y} = {y_i} ,\text{and} \mathbf{w} = {w_i}$分别是DoFs的控制点几何向量坐标分别代表$x$坐标和$y$坐标和权重$w$。代价函数被定义为:
+\begin{equation}
+    f(\mathbf{x} ,\mathbf{y} ,\mathbf{w}) = \frac{\tau_{\text{W}}}{|\tau_{\text{av}}|} + \varepsilon - \frac{\tau_{\text{W}}}{|\tau_{\text{av}}|} \varepsilon
+    \label{eq:cost_function}
+\end{equation}
+其中，$\tau_{\text{W}}$是权重向量并且被测试所定义（见图\ref{fig:sensitivity_weighting_factor}）。
+\begin{figure}
+    \centering
+    \includegraphics[width=0.6\linewidth]{figures/Sensitivity_with_respect_to_the_weighting_factor.png}
+    \caption{Sensitivity with respect to the weighting factor $\tau_\text{w} \in [0.1, 20]$.
+Red: chosen value of $\tau_\text{w}^\star = 8$ T/m. The numbers beside the markers denote
+the corresponding value of $\tau_\text{w}$ in T/m.}
+\label{fig:sensitivity_weighting_factor}
+\end{figure}
+最终选择$\tau_{w}^{*} = 8$ T/m，在不影响均匀性的情况下使得磁场梯度尽可能的高。优化问题可以写作:
+\begin{equation}
+    \min_{\mathbf{x},\mathbf{y},\mathbf{w}} f(\mathbf{x},\mathbf{y},\mathbf{w})
+    \label{eq:optimization_equation}
+\end{equation}
+为了确保几何的正确性，需要满足以下条件：
+\begin{align*}
+x_1 &\in [-3; -2]\ \text{mm}, & y_1 &\in [1.66; 2]\ \text{mm}, & w_1 &= 0.85 \\
+x_2 &\in [-5; -2]\ \text{mm}, & y_2 &\in [2.5; 4.5]\ \text{mm}, & w_2 &\in [0.35; 2.85] \\
+x_3 &\in [1.5; 2.5]\ \text{mm}, & y_3 &\in [1.89; 2.5]\ \text{mm}, & w_3 &= 0.87 \\
+x_4 &\in [-2; 2]\ \text{mm}, & y_4 &\in [4; 5.5]\ \text{mm}, & w_4 &\in [0.37; 2.87].
+\end{align*}
+在极头尖端的控制点 1'与 3'在x方向上与1 和3 耦合在一起，见图\ref{fig:Optimized_and_original_geometry}，目标是最小化函数\ref{eq:cost_function}并产生几何图形$\Omega_{\star}$。B. 优化程序。为了优化极头形状，我们使用hierarchical approach。首先使用Matlab的优化工具GPSPositiveBasis2N中的pattern search algorithm算法对全局的局域模型进行优化。设计的几何$\Omega^0$用来初始化，但是无论起始点如何总能保证全局优化是收敛的。使用三阶B样条基函数，对GeoPDEs网格进行细化直到$\text{H}^1$规范下的误差小于$10^{-2}$。进行全局优化之后，使用一个基于梯度的优化方案。MATLAB中的fmincon使用active-set算法。在全局优化的结果中表明控制点1和3符合几何约束的边界，因此在梯度的优化中几何的DoFs的数量减少到控制点2和4。为了确保B-样条函数的平滑度，将B-样条函数的阶数增加到5阶。反转函数$F^{-1}$的绝对精度设置为$10^{-7}$，quadrature的相对误差减小到$10^{-3}$，对网格也进行了细化，以产生$10^{-4}$的精度。C. 优化结果与验证。 优化的结果可以在图\ref{fig:Optimized_and_original_geometry}中看见。极头控制点的坐标与权重函数是:
+\begin{align*}
+x_1 &= -2.00\ \text{mm}, & y_1 &= 1.66\ \text{mm}, & w_1 &= 0.85, \\
+x_2 &= -4.11\ \text{mm}, & y_2 &= 4.50\ \text{mm}, & w_2 &= 1.25, \\
+x_3 &= 2.50\ \text{mm}, & y_3 &= 1.90\ \text{mm}, & w_3 &= 0.87, \\
+x_4 &= -2.00\ \text{mm}, & y_4 &= 4.00\ \text{mm}, & w_4 &= 0.37.
+\end{align*}
+新的设计在CST中得到了验证。由于采用了 NURBS 表示法，因此可以使用初始图形交换规范文件格式将优化后的杆尖形状准确导出到 CST 中，表\ref{tab:optimization_results}中展示了优化的结果。优化后的梯度场可以见图\ref{fig:optimization_gradient_comparison}
+\begin{figure}[h!]
+    \centering
+    \begin{subfigure}{0.95\textwidth}
+        \centering
+        \includegraphics[width=0.95\textwidth]{figures/CST_after_the_optimization.png}
+        \caption{Comparison of the gradient $\tau$ before and after the optimization. Results obtained by a 3-D simulation using CST EM STUDIO. (a) Original geometry $\Omega^0$. (b) Optimized geometry $\Omega_*$.}
+        \label{fig:CST_optimization_results}
+    \end{subfigure}
+    \vskip\baselineskip
+    \begin{subfigure}{0.95\textwidth}
+        \centering
+        \includegraphics[width=0.95\textwidth]{figures/GeoPDEs_after_the_optimization.png}
+        \caption{Comparison of the gradient $\tau$ before and after the optimization. Results obtained by a 2-D simulation using GeoPDEs. (a) Original geometry $\Omega^0$. (b) Optimized geometry $\Omega_*$.}
+        \label{fig:GeoPDEs_optimization_results}
+    \end{subfigure}
+    \caption{Comparison of the gradient $\tau$ before and after the optimization. (a) CST EM STUDIO 3-D simulation; (b) GeoPDEs 2-D simulation.}
+    \label{fig:optimization_gradient_comparison}
+\end{figure}
+从图中可以看出，GeoPDEs曲线的平滑度更高，这是因为使用了B样条曲线的原因。从图中我们可以看到优化使得磁场的梯度更高并且场更平缓，FeoPDEs的整个优化过程持续了6h，表\ref{tab:comp_time}显示了不同模型的计算时间。
+\begin{table}[!t]
+  \renewcommand{\arraystretch}{1.0} % 调整行高以匹配原图
+  \caption{Computational Time for the Three Different Models}
+  \label{tab:comp_time} % 建议添加标签以便引用
+  \centering
+  \scriptsize % 使用小号字体适配期刊双栏
+  \begin{tabular}{|l|c|c|c|}
+    \hline
+    & Order & DoFs & Time \\
+    \hline
+    FEMM (2D, full model, nonlinear) & 1 & 1381908 & 27min \\
+    \hline
+    CST (3D, full model, nonlinear) & 2 & 8113900 & 51min \\
+    \hline
+    GeoPDEs (2D, partial model, linear) & 5 & 117613 & 26s \\
+    \hline
+  \end{tabular}
+\end{table}
+斯特恩–盖拉赫磁铁的场域模型尺寸被缩减至关键的气隙与极头区域。磁轭及励磁线圈中的磁路部分采用磁等效电路建模，并通过场路耦合方式纳入整体仿真框架。此外，气隙与极头区域采用等几何分析（IGA）进行离散，该方法可精确表示 CAD 几何形状，并能实现全局光滑的场量表达，这对目标物理量的高精度求解至关重要。上述两项改进对于构建一套足够快速且精确、可用于优化流程的仿真方案而言是不可或缺的。最后，通过三维仿真进行的验证表明：优化后的设计显著优于原始设计。
 
 \subsection*{射频跃迁相关论文}
 
@@ -392,8 +733,6 @@ $R_F$是电流放大器的反馈电阻，$u_{out}^{k}$是电流放大器输出�
 
 
 
-
-
 \subsection{Initial Fulcher band observations from high resolution spectroscopy in the MAST-U divertor\cite{osborne_initial_2024}}
 
 
@@ -452,7 +791,16 @@ $R_F$是电流放大器的反馈电阻，$u_{out}^{k}$是电流放大器输出�
 \subsection*{LSP论文}
 \subsection{Precision lamb-shift polarimeter for polarized atomic and ion beams\cite{engels_precision_2003}}
 
-LSP是一种可以在短时间内测定原子束或者低能离子束极化度的仪器。
+LSP是一种可以在短时间内高精度测定原子束或者低能离子束极化度的仪器。极化度测量仪通过测定经过自旋选择器之后的亚稳态超精细氢原子能级猝灭产生的lyman-alpha跃迁的比例。不过不同的期间会对极化度测量产生影响因此需要弄明白有哪些修正。本文向问哦们展示了快速仪1\%的精度测量氢原子和质子的极化度是有可能的，束流密度需要少于10e15 atoms/s 或10e11 protons/s。
+
+LSP的组件有：
+\begin{itemize}
+    \item 带有强磁场的极化原子电离器
+    \item Wien Filter 用来提供粒子的纵向极化，同时也可以过滤不同质量的粒子 
+    \item 铯蒸气炉通过电荷交换将离子转换为亚稳态原子
+    \item 自旋选择器可以使得不同的单精细结构塞曼能级态在对应磁场时通过
+\end{itemize}
+
 
 首先考虑不同的修正:
 \paragraph{Spin-Filter修正}
@@ -689,7 +1037,7 @@ D & $|D_1\rangle$ & $|3/2, 3/2\rangle$ & $|1/2, 1\rangle$ \\
  & $|D_3\rangle$ & $|3/2, -1/2\rangle$ & $|1/2, -1\rangle$ \\
  & $|D_4\rangle$ & $|3/2, -3/2\rangle$ & $|-1/2, -1\rangle$ \\
  & $|D_5\rangle$ & $|1/2, 1/2\rangle$ & $|-1/2, 0\rangle$ \\
- & $|D_6\rangle$ & $|1/2, +1/2\rangle$ & $|-1/2, 1\rangle$ \\
+ & $|D_6\rangle$ & $|1/2,-1/2\rangle$ & $|-1/2, 1\rangle$ \\
 \bottomrule
 \end{tabular}
 \end{table}
